@@ -12,6 +12,6 @@ routes.delete('/user/:id', userController.delete);
 routes.put('/user/:id', userController.update);
 
 routes.post('/feedback', feedbackController.create);
-
+routes.get('/feedback', feedbackController.get);
 
 export default routes;

@@ -11,12 +11,15 @@ export default class FeedbackController implements Crud{
         const isAnyUndefined = Citi.areValuesUndefined(ProfilePictureLink, PersonName, FeedbackText);
         if(isAnyUndefined) return response.status(400).send();
 
-        const newFeedback = {ProfilePictureLink, PersonName, Feedback};
+        const newFeedback = {ProfilePictureLink, PersonName, FeedbackText};
         const {httpStatus, message} = await Citi.insertIntoDatabase(Feedback, newFeedback);
 
         return response.status(httpStatus).send({message});
+    }
 
-
+    async get(request: Request, response: Response){
+        const {httpStatus, values} = await Citi.getAll(Feedback);
+        return response.status(httpStatus).send(values);
     }
 
 
