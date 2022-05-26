@@ -15,6 +15,4 @@ export class Feedback {
     @Column()
     Feedback: string
 
-
-
 }
