@@ -2,7 +2,6 @@ import { Request, Response } from 'express';
 import { Feedback } from '@models/Feedback';
 import { Citi, Crud } from '../global'
 
-
 export default class FeedbackController implements Crud{
     
     async create(request: Request, response: Response){
@@ -30,7 +29,6 @@ export default class FeedbackController implements Crud{
 
         const {httpStatus, messageFromDelete} = await Citi.deleteValue(Feedback, feedbackFound);
         return response.status(httpStatus).send({messageFromDelete});
-
     }
 
     async update(request: Request, response: Response){
@@ -45,9 +43,4 @@ export default class FeedbackController implements Crud{
         const {httpStatus, messageFromUpdate} = await Citi.updateValue(Feedback, id, feedbackWithUpdates);
         return response.status(httpStatus).send({messageFromUpdate});
     }
-
-
-
-
-
 }

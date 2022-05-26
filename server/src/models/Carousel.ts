@@ -1,4 +1,4 @@
-import { Entity, PrimaryGeneratedColumn, Column } from "typeorm"
+import { Entity, PrimaryGeneratedColumn, Column } from "typeorm";
 
 @Entity()
 export class Carousel {
@@ -14,4 +14,5 @@ export class Carousel {
 
     @Column()
     imageLink: string
+
 }
