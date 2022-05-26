@@ -22,6 +22,17 @@ export default class FeedbackController implements Crud{
         return response.status(httpStatus).send(values);
     }
 
+    async delete(request: Request, response: Response){
+        const { id } = request.params;
+        const {value: feedbackFound, message} = await Citi.findByID(Feedback, id);
+
+        if(!feedbackFound) return response.status(400).send({message});
+
+        const {httpStatus, messageFromDelete} = await Citi.deleteValue(Feedback, feedbackFound);
+        return response.status(httpStatus).send({messageFromDelete});
+
+    }
+
 
 
 
