@@ -17,7 +17,7 @@ export default class CarouselController implements Crud {
     }
 
     async get(request: Request, response: Response){
-        const {httpStatus, values} = await Citi.getAll(Carousel)
+        const {httpStatus, values} = await Citi.getAll(Carousel);
         return response.status(httpStatus).send(values);
     }
 
