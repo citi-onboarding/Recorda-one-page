@@ -33,6 +33,19 @@ export default class FeedbackController implements Crud{
 
     }
 
+    async update(request: Request, response: Response){
+        const { id } = request.params;
+        const {ProfilePictureLink, PersonName, FeedbackText} = request.body;
+
+        const isAnyUndefined = await Citi.areValuesUndefined(ProfilePictureLink, PersonName, FeedbackText, id);
+        if(isAnyUndefined) return response.status(400).send();
+
+        const feedbackWithUpdates = {ProfilePictureLink, PersonName, FeedbackText};
+
+        const {httpStatus, messageFromUpdate} = await Citi.updateValue(Feedback, id, feedbackWithUpdates);
+        return response.status(httpStatus).send({messageFromUpdate});
+    }
+
 
 
 
