@@ -1,4 +1,4 @@
-import { Entity, PrimaryGeneratedColumn, Column} from "typeorm"
+import { Entity, PrimaryGeneratedColumn, Column } from "typeorm"
 
 @Entity()
 export class FirstSection {
@@ -7,14 +7,14 @@ export class FirstSection {
     id: number
 
     @Column()
-    info1: String
+    info1: string
 
     @Column()
-    info2: String
+    info2: string
 
     @Column()
-    info3: String
+    info3: string
 
     @Column()
-    linkAppImage: String
+    linkAppImage: string
 }

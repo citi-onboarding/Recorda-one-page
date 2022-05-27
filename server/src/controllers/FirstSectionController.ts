@@ -10,7 +10,7 @@ export default class FirstSectionController implements Crud{
         const isAnyUndefined = Citi.areValuesUndefined(info1, info2, info3, linkAppImage);
         if(isAnyUndefined) return response.status(400).send();
 
-        const newFirstSection = { info1, info2, info3, linkAppImage};
+        const newFirstSection = {info1, info2, info3, linkAppImage};
         const {httpStatus, message} = await Citi.insertIntoDatabase(FirstSection, newFirstSection);
 
         return response.status(httpStatus).send({message});
@@ -35,12 +35,12 @@ export default class FirstSectionController implements Crud{
         const { id } = request.params;
         const {info1, info2, info3, linkAppImage} = request.body;
 
-        const isAnyUndefined = await Citi.areValuesUndefined(info1, info2, info3, linkAppImage);
+        const isAnyUndefined = await Citi.areValuesUndefined(info1, info2, info3, linkAppImage, id);
         if(isAnyUndefined) return response.status(400).send();
 
-        const firstSectionWitchUpdates = {info1, info2, info3, linkAppImage};
+        const firstSectionWithUpdatedValues = {info1, info2, info3, linkAppImage};
 
-        const {httpStatus, messageFromUpdate} = await Citi.updateValue(FirstSection, id, firstSectionWitchUpdates);
+        const {httpStatus, messageFromUpdate} = await Citi.updateValue(FirstSection, id, firstSectionWithUpdatedValues);
         return response.status(httpStatus).send({messageFromUpdate});
     }
 }
