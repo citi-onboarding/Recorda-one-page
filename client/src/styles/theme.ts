@@ -3,7 +3,7 @@ export const theme = {
       background: 'white',
       primary: 'black',
       text: 'black',
-      card1: 'rgba(229, 229, 229, 0.5)',
-      card2: '#CACACA'
+      newsCard1: 'rgba(229, 229, 229, 0.5)',
+      newsCard2: 'rgba(202, 202, 202, 1)'
     },
   };
