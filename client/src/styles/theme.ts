@@ -1,7 +1,9 @@
 export const theme = {
     colors: {
-      background: '#292929',
-      primary: '#e1e1e6',
-      text: '#e1e1e6',
+      background: 'white',
+      primary: 'black',
+      text: 'black',
+      card1: 'rgba(229, 229, 229, 0.5)',
+      card2: '#CACACA'
     },
   };
