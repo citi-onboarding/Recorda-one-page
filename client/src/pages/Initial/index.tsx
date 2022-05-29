@@ -1,9 +1,10 @@
 
 import { InitialContainer, FraseDeEfeito, Paragrafo, 
         BotaoDownload, TopContainer, BottonContainer,
-        DadosContainer, Dado, ImagemContainer, Numero,
-        Titulo
+        DadosContainer, ImagemContainer, DadoStyle
 } from "./styles";
+
+import { Dados } from "../../components";
 
 import { Cell } from "../../assets";
 
@@ -11,7 +12,6 @@ export const Initial = () => {
     return(
         <>
         <InitialContainer>
-
             <TopContainer>
                 <FraseDeEfeito>What is Lorem Ipsum</FraseDeEfeito>
                 <Paragrafo>is simply dummy text of the printing and typesetting industry. 
@@ -25,18 +25,9 @@ export const Initial = () => {
             </TopContainer>
             <BottonContainer>
                 <DadosContainer>
-                    <Dado id="Dado1" >
-                        <Numero>123</Numero>
-                        <Titulo>FAMILIAS<br/>ASSISTIDAS</Titulo>
-                    </Dado>
-                    <Dado id="Dado2">
-                        <Numero>123</Numero>
-                        <Titulo>FAMILIAS<br />ASSISTIDAS</Titulo>
-                    </Dado>
-                    <Dado id="Dado3">
-                        <Numero>123</Numero>
-                        <Titulo>FAMILIAS <br />ASSISTIDAS</Titulo>
-                    </Dado>
+                   <DadoStyle id="Dado1"><Dados /></DadoStyle>
+                   <DadoStyle id="Dado2"><Dados /></DadoStyle>
+                   <DadoStyle id="Dado3"><Dados /></DadoStyle>
                 </DadosContainer>
                 <ImagemContainer>
                     <img src={Cell} className="imagem" id="primeiraImg" alt="Foto 1" />

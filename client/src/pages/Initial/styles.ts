@@ -66,12 +66,11 @@ export const DadosContainer = styled.div`
 `;
 
 
-export const Dado = styled.div`
+export const DadoStyle = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
 `;
 
 export const Numero = styled.h1`
