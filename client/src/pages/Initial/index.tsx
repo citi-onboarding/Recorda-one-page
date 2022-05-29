@@ -1,10 +1,17 @@
 
-import { InitialContainer, FraseDeEfeito, Paragrafo, BotaoDownload, TopContainer} from "./styles";
+import { InitialContainer, FraseDeEfeito, Paragrafo, 
+        BotaoDownload, TopContainer, BottonContainer,
+        DadosContainer, Dado, ImagemContainer, Numero,
+        Titulo
+} from "./styles";
+
+import { Cell } from "../../assets";
 
 export const Initial = () => {
     return(
         <>
         <InitialContainer>
+
             <TopContainer>
                 <FraseDeEfeito>Frase de Efeito</FraseDeEfeito>
                 <Paragrafo>is simply dummy text of the printing and typesetting industry. 
@@ -16,6 +23,27 @@ export const Initial = () => {
                 software like Aldus PageMaker including versions of Lorem Ipsum.</Paragrafo>
                 <BotaoDownload>Baixe agora!</BotaoDownload>
             </TopContainer>
+            <BottonContainer>
+                <DadosContainer>
+                    <Dado id="Dado1" >
+                        <Numero>123</Numero>
+                        <Titulo>FAMILIAS<br/>ASSISTIDAS</Titulo>
+                    </Dado>
+                    <Dado id="Dado2">
+                        <Numero>123</Numero>
+                        <Titulo>FAMILIAS<br />ASSISTIDAS</Titulo>
+                    </Dado>
+                    <Dado id="Dado3">
+                        <Numero>123</Numero>
+                        <Titulo>FAMILIAS <br />ASSISTIDAS</Titulo>
+                    </Dado>
+                </DadosContainer>
+                <ImagemContainer>
+                    <img src={Cell} alt="Foto 1" />
+                </ImagemContainer>
+            </BottonContainer>
+
+
         </InitialContainer>
         </>
     );
