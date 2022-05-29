@@ -1,5 +1,1 @@
-import { Home } from './home';
-
-export {
-    Home
-};
+import React from "react";
