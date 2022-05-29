@@ -26,10 +26,6 @@ export const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
   }
 
-  body {
-    font-family: sans-serif;
-  }
-
   button {
     cursor: pointer;
   }
