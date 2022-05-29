@@ -13,7 +13,7 @@ export const Initial = () => {
         <InitialContainer>
 
             <TopContainer>
-                <FraseDeEfeito>Frase de Efeito</FraseDeEfeito>
+                <FraseDeEfeito>What is Lorem Ipsum</FraseDeEfeito>
                 <Paragrafo>is simply dummy text of the printing and typesetting industry. 
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                 when an unknown printer took a galley of type and scrambled it to make a type 
@@ -39,11 +39,10 @@ export const Initial = () => {
                     </Dado>
                 </DadosContainer>
                 <ImagemContainer>
-                    <img src={Cell} alt="Foto 1" />
+                    <img src={Cell} className="imagem" id="primeiraImg" alt="Foto 1" />
+                    <img src={Cell} className="imagem" id="segundaImg" alt="Foto 2" />
                 </ImagemContainer>
             </BottonContainer>
-
-
         </InitialContainer>
         </>
     );

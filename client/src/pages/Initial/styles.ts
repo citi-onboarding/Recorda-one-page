@@ -43,7 +43,7 @@ export const DadosContainer = styled.div`
     display: grid;
     grid-template-rows: 33fr 33fr 33fr;
     grid-template-columns: 50fr 50fr;
-    width: 50%;
+    width: 45%;
 
     #Dado1{
         grid-row-start: 1;
@@ -109,10 +109,36 @@ export const Titulo = styled.p`
 `;
 
 export const ImagemContainer = styled.div`
-    width: 50%;
+    width: 55%;
     height: auto;
-    display: flex;
-    align-items: flex-start;
+    display: grid;
+    box-sizing: border-box;
+    grid-template-rows: 50fr 50fr;
+    grid-template-columns: 25fr 25fr 25fr 25fr;
+
+    .imagem{
+        width: 449px;
+        height: 801px;
+    }
+
+    #primeiraImg{
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        z-index: 2;
+    }
+
+    #segundaImg{
+        margin-top: 100px;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        transform: rotate(25.2deg);
+        z-index: 1;
+    }
+
 `;
 
 export const Imagem = styled.div`
@@ -150,6 +176,11 @@ export const BotaoDownload = styled.button`
     background: #C4C4C4;
     border-radius: 15px;
     border: none;
+
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
 
 
 
