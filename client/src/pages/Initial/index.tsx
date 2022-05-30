@@ -1,12 +1,10 @@
 
 import { InitialContainer, FraseDeEfeito, Paragrafo, 
         BotaoDownload, TopContainer, BottonContainer,
-        DadosContainer, ImagemContainer, DadoStyle
+        DadosContainer, ImagemContainer, DadoStyle, Imagem
 } from "./styles";
 
-import { Dados } from "../../components";
-
-import { Cell } from "../../assets";
+import { Dados, TelaDeCelular} from "../../components";
 
 export const Initial = () => {
     return(
@@ -25,13 +23,13 @@ export const Initial = () => {
             </TopContainer>
             <BottonContainer>
                 <DadosContainer>
-                   <DadoStyle id="Dado1"><Dados /></DadoStyle>
-                   <DadoStyle id="Dado2"><Dados /></DadoStyle>
-                   <DadoStyle id="Dado3"><Dados /></DadoStyle>
+                   <DadoStyle id="Dado1"><Dados numero={15} titulo={"FAMILIAS ASSISTIDAS"} /></DadoStyle>
+                   <DadoStyle id="Dado2"><Dados numero={980} titulo={"MODEL SENTENCE"} /></DadoStyle>
+                   <DadoStyle id="Dado3"><Dados numero={253} titulo={"STANDARD CHUNK"} /></DadoStyle>
                 </DadosContainer>
                 <ImagemContainer>
-                    <img src={Cell} className="imagem" id="primeiraImg" alt="Foto 1" />
-                    <img src={Cell} className="imagem" id="segundaImg" alt="Foto 2" />
+                    <Imagem id="primeiraImg"><TelaDeCelular /></Imagem>
+                    <Imagem id="segundaImg"><TelaDeCelular /></Imagem>
                 </ImagemContainer>
             </BottonContainer>
         </InitialContainer>

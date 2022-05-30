@@ -1,10 +1,15 @@
 import { Numero, Titulo} from "./styles";
 
-export const Dados = () => {
+interface Props{
+    numero: number;
+    titulo: string;
+}
+
+export const Dados = ({numero, titulo}: Props) => { 
     return (
         <>
-            <Numero>123</Numero>
-            <Titulo>FAMILIAS<br/>ASSISTIDAS</Titulo>
+            <Numero>{numero}</Numero>
+            <Titulo>{titulo}</Titulo>
         </>
     );
 }
