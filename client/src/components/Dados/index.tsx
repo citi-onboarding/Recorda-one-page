@@ -1,10 +1,15 @@
-import React from "react";
+import { Numero, Titulo} from "./styles";
 
-export const Dados = () => {
+interface Props{
+    numero: number;
+    titulo: string;
+}
+
+export const Dados = ({numero, titulo}: Props) => { 
     return (
         <>
-            <h2 id="dados-titulo">XXX</h2>
-            <h3 id="texto-dados">xx<br></br>xx</h3>
+            <Numero>{numero}</Numero>
+            <Titulo>{titulo}</Titulo>
         </>
     );
 } 

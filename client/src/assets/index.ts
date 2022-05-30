@@ -1,5 +1,5 @@
-import LogoCITi from './logo.png';
+import Cell from './cell.png';
 
 export {
-    LogoCITi
+    Cell
 };

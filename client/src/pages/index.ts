@@ -1,5 +1,5 @@
-import { Home } from './home';
+import { Initial } from "./Initial";
 
-export {
-    Home
-};
+export{
+    Initial
+}
