@@ -7,4 +7,4 @@ export const Dados = () => {
             <h3 id="texto-dados">xx<br></br>xx</h3>
         </>
     );
-}
+} 
