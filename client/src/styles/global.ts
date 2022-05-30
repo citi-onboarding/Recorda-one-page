@@ -20,9 +20,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: ${(props) => props.theme.colors.background};
-    color: ${(props) => props.theme.colors.text};
-    font: 400 16px Barlow, sans-serif;
+    font-family:  'Barlow', sans-serif;
     -webkit-font-smoothing: antialiased;
   }
 

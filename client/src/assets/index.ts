@@ -1,5 +1,5 @@
-import LogoCITi from './logo.png';
+import Hearth from './hearth.svg';
 
 export {
-    LogoCITi
+    Hearth
 };
