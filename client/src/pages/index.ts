@@ -1,4 +1,4 @@
-import { Initial } from "./Initial"
+import { Initial } from "./InitialSection"
 
 export{
     Initial

@@ -33,25 +33,25 @@ export const BottonContainer = styled.div`
     align-items: center;
 `;
 
-export const DadosContainer = styled.div`
+export const DataContainer = styled.div`
     display: grid;
     grid-template-rows: 33fr 33fr 33fr;
     grid-template-columns: 50fr 50fr;
     width: 45%;
 
-    #Dado1{
+    #Data1{
         grid-row-start: 1;
         grid-row-end: 2;
         grid-column-start: 1;
         grid-column-end: 2;
     }
-    #Dado2{
+    #Data2{
         grid-row-start: 2;
         grid-row-end: 3;
         grid-column-start: 2;
         grid-column-end: 3;
     }
-    #Dado3{
+    #Data3{
         grid-row-start: 3;
         grid-row-end: 4;
         grid-column-start: 1;
@@ -60,7 +60,7 @@ export const DadosContainer = styled.div`
 `;
 
 
-export const DadoStyle = styled.div`
+export const DataContent = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
@@ -117,7 +117,7 @@ export const ImagemContainer = styled.div`
     }
 `;
 
-export const Imagem = styled.div`
+export const ImagemContent = styled.div`
     width: 449px;
     height: 801px;
 `;
