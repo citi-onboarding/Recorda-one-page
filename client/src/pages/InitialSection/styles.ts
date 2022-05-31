@@ -17,9 +17,10 @@ export const TopContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     margin-top: 130px;
     margin-bottom: 230px;
+    padding-left: 6.64%;
     gap: 39px;
 `;
 
@@ -131,7 +132,7 @@ export const FraseDeEfeito = styled.h3`
     font-weight: 800;
     font-size: 36px;
     line-height: 43px;
-    text-align: center;
+    text-align: left;
     color: #000000;
 `;
 
@@ -143,7 +144,7 @@ export const Paragrafo = styled.p`
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
-    text-align: center;
+    text-align: left;
     font-feature-settings: 'case' on;
     color: rgba(0, 0, 0, 0.8);
 `;
