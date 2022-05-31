@@ -21,7 +21,7 @@ export const Initial = () => {
             </TopContainer>
             <BottonContainer>
                 <DataContainer>
-                   <DataContent id="Data1"><Dados numero={154} titulo={"FAMILIAS ASSISTIDAS"} /></DataContent>
+                   <DataContent id="Data1"><Dados numero={154} titulo={"FAMILIAS ASSISTIDAS"}/></DataContent>
                    <DataContent id="Data2"><Dados numero={980} titulo={"MODEL SENTENCE"} /></DataContent>
                    <DataContent id="Data3"><Dados numero={253} titulo={"STANDARD CHUNK"} /></DataContent>
                 </DataContainer>
