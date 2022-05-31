@@ -10,7 +10,7 @@ export const NewsContainer = styled.div`
     gap: 80px;
 `;
 
-export const SectionTitle = styled.h2`
+export const NewsTitle = styled.h2`
     width: 100vw;
     font-style: normal;
     font-weight: 400;
