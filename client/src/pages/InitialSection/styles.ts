@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { BG } from "../../assets";
+import { Backgroung } from "../../assets";
 
 export const InitialContainer = styled.div`
     display: grid;
@@ -8,7 +8,6 @@ export const InitialContainer = styled.div`
     width: 100%;
     height: 100vh;
     background-color: #FFFEFC;
-    //background: linear-gradient(180deg, #DFDFDF 0%, rgba(233, 233, 233, 0) 100%);
 `;
 
 export const TopContainer = styled.div`
@@ -26,7 +25,7 @@ export const TopContainer = styled.div`
     gap: 67px;
     //box-sizing: border-box;
     background-color: #872410 !important; //mudar a sintaxe
-    background: url(${BG});
+    background: url(${Backgroung});
 
     img{
         position: absolute;
@@ -43,18 +42,19 @@ export const BottonContainer = styled.div`
     grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: 3;
+
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    
     background-color: #FFFEFC;
+    
 `;
 
 export const DataContainer = styled.div`
     display: grid;
     grid-template-rows: 33fr 33fr 33fr;
     grid-template-columns: 50fr 50fr;
-    width: 45%;
+    width: 50%;
 
     #Data1{
         grid-row-start: 1;
@@ -108,10 +108,9 @@ export const Titulo = styled.p`
 `;
 
 export const ImagemContainer = styled.div`
-    width: 55%;
+    width: 50%;
     height: auto;
     display: grid;
-    box-sizing: border-box;
     grid-template-rows: 50fr 50fr;
     grid-template-columns: 25fr 25fr 25fr 25fr;
 
@@ -126,7 +125,6 @@ export const ImagemContainer = styled.div`
     }
     
     #segundaImg{
-        //margin-top: 100px;
         grid-row-start: 1;
         grid-row-end: 3;
         grid-column-start: 3;
@@ -136,8 +134,6 @@ export const ImagemContainer = styled.div`
 `;
 
 export const ImagemContent = styled.div`
-    /*width: 449px;
-    height: 801px;*/
 `;
 
 

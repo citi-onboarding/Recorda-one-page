@@ -1,11 +1,11 @@
 import { Numero, Titulo} from "./styles";
 
-interface Props{
+type DadosProps = {
     numero: number;
     titulo: string;
-}
+};
 
-export const Dados = ({numero, titulo}: Props) => { 
+export const Dados: React.ElementType = ({numero, titulo}: DadosProps) => { 
     return (
         <>
             <Numero>{numero}</Numero>

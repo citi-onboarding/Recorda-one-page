@@ -5,7 +5,7 @@ DataContainer, ImagemContainer, DataContent, ImagemContent } from "./styles";
 import { Dados, TelaDeCelular} from "../../components";
 import { OldPeople, Celular1, Celular2 } from "../../assets";
 
-export const Initial = () => {
+export const Initial: React.ElementType = () => {
     return(
         <>
         <InitialContainer>
@@ -18,7 +18,7 @@ export const Initial = () => {
                 remaining essentially unchanged. It was popularised in the 1960s with the release 
                 of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
                 software like Aldus PageMaker including versions of Lorem Ipsum.</Paragrafo>
-                <BotaoDownload></BotaoDownload>
+                <BotaoDownload>BAIXE AGORA!</BotaoDownload>
                 <img src={OldPeople} alt="Foto de grupo de idosos" />
             </TopContainer>
             <BottonContainer>
