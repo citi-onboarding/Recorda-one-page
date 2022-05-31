@@ -19,7 +19,7 @@ export const Initial: React.ElementType = () => {
                 of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
                 software like Aldus PageMaker including versions of Lorem Ipsum.</Paragrafo>
                 <BotaoDownload>BAIXE AGORA!</BotaoDownload>
-                <img src={OldPeople} alt="Foto de grupo de idosos" />
+                <img src={OldPeople} alt="Foto de grupo de idosos"/>
             </TopContainer>
             <BottonContainer>
                 <DataContainer>

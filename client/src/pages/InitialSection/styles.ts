@@ -3,11 +3,49 @@ import { Backgroung } from "../../assets";
 
 export const InitialContainer = styled.div`
     display: grid;
-    grid-template-columns: 50fr 50fr;
     grid-template-rows: 25fr 75fr;
+    grid-template-columns: 50fr 50fr;
     width: 100%;
     height: 100vh;
     background-color: #FFFEFC;
+`;
+
+export const FraseDeEfeito = styled.h3`
+    width: 80%;
+    height: 4%;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: left;
+    color: #FFFEFC; //////////////////
+`;
+
+export const Paragrafo = styled.p`
+    width: 80%;
+    height: auto;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+    font-feature-settings: 'case' on;
+    color: #F2F3F6; /////////////////////
+`;
+
+export const BotaoDownload = styled.button`
+    width: 234px;
+    height: 69px;
+    background: #F2F3F6;
+    border-radius: 15px;
+    border: none;
+
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
 `;
 
 export const TopContainer = styled.div`
@@ -15,6 +53,7 @@ export const TopContainer = styled.div`
     grid-row-end: 2;
     grid-column-start: 1;
     grid-column-end: 3;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -33,6 +72,7 @@ export const TopContainer = styled.div`
         right: -1.76%;
         top: 49.76%;
         bottom: -21.5%;
+        
     }
     
 `;
@@ -54,6 +94,7 @@ export const DataContainer = styled.div`
     display: grid;
     grid-template-rows: 33fr 33fr 33fr;
     grid-template-columns: 50fr 50fr;
+    
     width: 50%;
 
     #Data1{
@@ -136,41 +177,3 @@ export const ImagemContainer = styled.div`
 export const ImagemContent = styled.div`
 `;
 
-
-export const FraseDeEfeito = styled.h3`
-    width: 80%;
-    height: 40px;
-    font-family: 'Barlow';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 36px;
-    line-height: 43px;
-    text-align: left;
-    color: #FFFEFC; //////////////////
-`;
-
-export const Paragrafo = styled.p`
-    width: 80%;
-    height: auto;
-    font-family: 'Barlow';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    text-align: left;
-    font-feature-settings: 'case' on;
-    color: #F2F3F6; /////////////////////
-`;
-
-export const BotaoDownload = styled.button`
-    width: 234px;
-    height: 69px;
-    background: #F2F3F6;
-    border-radius: 15px;
-    border: none;
-
-    font-family: 'Barlow';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-`;
