@@ -24,7 +24,8 @@ export const Titulo = styled.p`
     font-weight: 400;
     font-size: 24px;
     line-height: 28px;
-    text-align: center;
+    /* or 117% */
+
     text-align: center;
 
     color: #000000;

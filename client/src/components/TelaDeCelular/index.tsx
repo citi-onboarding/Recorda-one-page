@@ -1,8 +1,13 @@
-import { Cell } from "../../assets";
+import { Cell, Celular1 } from "../../assets";
+
+type CelularProps = {
+    image: string;
+};
 
 
-export const TelaDeCelular = () => {
+
+export const TelaDeCelular: React.ElementType = ({image}: CelularProps) => {
     return(
-        <img src={Cell} alt="" />
+        <img src={image} alt="" />
     );
 }

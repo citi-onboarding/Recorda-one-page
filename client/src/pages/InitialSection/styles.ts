@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { BG } from "../../assets";
 
 export const InitialContainer = styled.div`
     display: grid;
@@ -6,7 +7,8 @@ export const InitialContainer = styled.div`
     grid-template-rows: 25fr 75fr;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(180deg, #DFDFDF 0%, rgba(233, 233, 233, 0) 100%);
+    background-color: #FFFEFC;
+    //background: linear-gradient(180deg, #DFDFDF 0%, rgba(233, 233, 233, 0) 100%);
 `;
 
 export const TopContainer = styled.div`
@@ -18,10 +20,22 @@ export const TopContainer = styled.div`
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    margin-top: 130px;
-    margin-bottom: 230px;
+    padding-top: 130px;
+    padding-bottom: 230px;
     padding-left: 6.64%;
-    gap: 39px;
+    gap: 67px;
+    //box-sizing: border-box;
+    background-color: #872410 !important; //mudar a sintaxe
+    background: url(${BG});
+
+    img{
+        position: absolute;
+        left: 44.72%;
+        right: -1.76%;
+        top: 49.76%;
+        bottom: -21.5%;
+    }
+    
 `;
 
 export const BottonContainer = styled.div`
@@ -32,6 +46,8 @@ export const BottonContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    background-color: #FFFEFC;
 `;
 
 export const DataContainer = styled.div`
@@ -98,29 +114,30 @@ export const ImagemContainer = styled.div`
     box-sizing: border-box;
     grid-template-rows: 50fr 50fr;
     grid-template-columns: 25fr 25fr 25fr 25fr;
+
+    margin-top: 13.2%;
     
     #primeiraImg{
         grid-row-start: 1;
         grid-row-end: 3;
         grid-column-start: 1;
         grid-column-end: 3;
-        z-index: 2;
+        z-index: 1;
     }
     
     #segundaImg{
-        margin-top: 100px;
+        //margin-top: 100px;
         grid-row-start: 1;
         grid-row-end: 3;
-        grid-column-start: 2;
-        grid-column-end: 3;
-        transform: rotate(25.2deg);
-        z-index: 1;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        z-index: 2;
     }
 `;
 
 export const ImagemContent = styled.div`
-    width: 449px;
-    height: 801px;
+    /*width: 449px;
+    height: 801px;*/
 `;
 
 
@@ -133,7 +150,7 @@ export const FraseDeEfeito = styled.h3`
     font-size: 36px;
     line-height: 43px;
     text-align: left;
-    color: #000000;
+    color: #FFFEFC; //////////////////
 `;
 
 export const Paragrafo = styled.p`
@@ -146,13 +163,13 @@ export const Paragrafo = styled.p`
     line-height: 30px;
     text-align: left;
     font-feature-settings: 'case' on;
-    color: rgba(0, 0, 0, 0.8);
+    color: #F2F3F6; /////////////////////
 `;
 
 export const BotaoDownload = styled.button`
     width: 234px;
     height: 69px;
-    background: #C4C4C4;
+    background: #F2F3F6;
     border-radius: 15px;
     border: none;
 
