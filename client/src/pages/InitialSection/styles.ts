@@ -94,7 +94,7 @@ export const DataContainer = styled.div`
     display: grid;
     grid-template-rows: 33fr 33fr 33fr;
     grid-template-columns: 50fr 50fr;
-    
+
     width: 50%;
 
     #Data1{
@@ -157,7 +157,7 @@ export const ImagemContainer = styled.div`
 
     margin-top: 13.2%;
     
-    #primeiraImg{
+    #TelaApp1{
         grid-row-start: 1;
         grid-row-end: 3;
         grid-column-start: 1;
@@ -165,7 +165,7 @@ export const ImagemContainer = styled.div`
         z-index: 1;
     }
     
-    #segundaImg{
+    #TelaApp2{
         grid-row-start: 1;
         grid-row-end: 3;
         grid-column-start: 3;
@@ -174,6 +174,4 @@ export const ImagemContainer = styled.div`
     }
 `;
 
-export const ImagemContent = styled.div`
-`;
 

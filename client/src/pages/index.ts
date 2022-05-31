@@ -1,5 +1,5 @@
-import { Initial } from "./InitialSection"
+import { Initial } from "./InitialSection";
 
-export{
+export {
     Initial
-}
+};
