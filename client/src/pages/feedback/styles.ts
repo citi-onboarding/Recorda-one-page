@@ -18,11 +18,10 @@ export const FeedbackCardsDiv = styled.div`
 
 export const FeedbackTitle = styled.h2`
     display: flex;
-    flex-flow: row nowrap;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 100vw;
-    font-style: normal;
     font-weight: 400;
     font-size: 48px;
     line-height: 58px;
@@ -31,10 +30,14 @@ export const FeedbackTitle = styled.h2`
     margin-bottom: 62px;
 `;
 
-export const FeedbackEmoji = styled.img`
+export const FeedbackTitleImage = styled.img`
     position: relative;
     left: -20px;
     top: -20px;
+
+    @media screen and (max-width: 950px) {
+        display: none;
+    }
 `;
 
 export const UpperFeedbacks = styled.div`
