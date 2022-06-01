@@ -2,49 +2,34 @@ import styled from "styled-components";
 import { Backgroung } from "../../assets";
 
 export const InitialContainer = styled.div`
-    display: grid;
-    grid-template-rows: 25fr 75fr;
-    grid-template-columns: 50fr 50fr;
-
-    justify-content: center;
-    align-items: center;
 
     width: 100%;
-    height: 100vh;
-
 
     background-color: ${(props) => props.theme.colors.background};
-    
-    
+    position: relative;
+
+    #OldPeopleImage{
+        position: absolute;
+        right: 2%;
+        bottom: 48%;
+        width: 50%;
+    }
 `;
 
 export const TopContainer = styled.div`
     box-sizing: border-box;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 3;
-   
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+
     width: 100%;
 
     padding: 228px 6.64% 230px 6.64%;
     gap: 67px;
     background-color: ${(props) => props.theme.colors.darkRed} !important;
     background: url(${Backgroung});
-
-    #OldPeopleImage{
-        position: absolute;
-        left: 44.72%;
-        right: -1.76%;
-        top: 70%;
-        bottom: -21.5%;
-    }
-
-    
 `;
 
 export const FraseDeEfeito = styled.h3`
@@ -89,19 +74,17 @@ export const BotaoDownload = styled.button`
 
 export const BottonContainer = styled.div`
 
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 3;
-
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #FFFEFC;
-    
+    width: 100%;
+
+    margin-bottom: 10%;
 `;
 
 export const DataContainer = styled.div`
+
     box-sizing: border-box;
     display: grid;
     grid-template-rows: 33fr 33fr 33fr;
@@ -129,26 +112,27 @@ export const DataContainer = styled.div`
     }
 `;
 
-
 export const DataContent = styled.div`
+
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 `;
 
-
 export const ImagemContainer = styled.div`
+
     box-sizing: border-box;
-    width: 55%;
+    width: 60%;
     height: auto;
 
     display: grid;
     grid-template-rows: 50fr 50fr;
     grid-template-columns: 25fr 25fr 25fr 25fr;
-    
-    margin-top: 13.2%;
 
+    padding-top: 13.4%;
+    
+   
     #TelaApp1{
         grid-row-start: 1;
         grid-row-end: 3;
@@ -158,6 +142,7 @@ export const ImagemContainer = styled.div`
     }
     
     #TelaApp2{
+        padding-left: 20px;
         grid-row-start: 1;
         grid-row-end: 3;
         grid-column-start: 3;
@@ -165,5 +150,3 @@ export const ImagemContainer = styled.div`
         z-index: 2;
     }
 `;
-
-
