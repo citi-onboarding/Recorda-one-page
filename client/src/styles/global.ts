@@ -20,14 +20,12 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
+
     background: ${(props) => props.theme.colors.background};
     color: ${(props) => props.theme.colors.textDark};
     font: 400 16px Roboto, sans-serif;
+    font-family:  'Barlow', sans-serif;
     -webkit-font-smoothing: antialiased;
-  }
-
-  body {
-    font-family: sans-serif;
   }
 
   button {
