@@ -5,7 +5,7 @@ import {
 } from "./styles";
 
 import { Dados } from "../../components";
-import { OldPeople, Celular1, Celular2, Oi } from "../../assets";
+import { OldPeople, Celular1, Celular2, Celular} from "../../assets";
 
 export const Initial: React.ElementType = () => {
     return (
@@ -21,17 +21,16 @@ export const Initial: React.ElementType = () => {
                         of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
                         software like Aldus PageMaker including versions of Lorem Ipsum.</Paragrafo>
                     <BotaoDownload>BAIXE AGORA!</BotaoDownload>
-                </TopContainer>
                 <img src={OldPeople} id="OldPeopleImage" alt="Ilustração de Grupo de Pessoas Idosas" />
+                </TopContainer>
                 <BottonContainer>
                     <DataContainer>
-                    <DataContent id="Data1"><Dados numero={154} titulo={"FAMILIAS ASSISTIDAS"} /></DataContent>
-                    <DataContent id="Data2"><Dados numero={980} titulo={"MODEL SENTENCE"} /></DataContent>
-                    <DataContent id="Data3"><Dados numero={253} titulo={"STANDARD CHUNK"} /></DataContent>
+                        <DataContent id="Data1"><Dados numero={154} titulo={"FAMILIAS ASSISTIDAS"} /></DataContent>
+                        <DataContent id="Data2"><Dados numero={980} titulo={"MODEL SENTENCE"} /></DataContent>
+                        <DataContent id="Data3"><Dados numero={253} titulo={"STANDARD CHUNK"} /></DataContent>
                     </DataContainer>
                     <ImagemContainer>
-                    <img src={Celular1} id="TelaApp1" alt="Tela do Aplicativo" />
-                    <img src={Celular2} id="TelaApp2" alt="Tela do Aplicativo" />
+                        <img src={Celular} id="Tela" alt="" />
                     </ImagemContainer>
                 </BottonContainer>
             </InitialSection>

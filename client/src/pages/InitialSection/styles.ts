@@ -11,14 +11,8 @@ export const InitialSection = styled.div`
     max-width: 1440px;
 
     background-color: ${(props) => props.theme.colors.background};
-    position: relative;
-
-    #OldPeopleImage{
-        position: absolute;
-        right: 2%;
-        bottom: 17%;
-        width: 50%;
-    }
+    
+    
     box-sizing: border-box;
 `;
 
@@ -39,6 +33,14 @@ export const TopContainer = styled.div`
 
     background-color: ${(props) => props.theme.colors.darkRed} !important;
     background: url(${Backgroung});
+    position: relative;
+    #OldPeopleImage{
+        position: absolute;
+        right: 0;
+        bottom: -146px;
+        width: 60%;
+        
+    }
 `;
 
 export const FraseDeEfeito = styled.h3`
@@ -54,7 +56,7 @@ export const FraseDeEfeito = styled.h3`
 `;
 
 export const Paragrafo = styled.p`
-    width: 60%;
+    width: 80%;
 
     height: auto;
     font-family: 'Barlow';
@@ -89,17 +91,19 @@ export const BottonContainer = styled.div`
     background-color: #FFFEFC;
     //width: 100%;
 
-    margin-bottom: 10%;
+    padding-bottom: 10%;
+    padding-top: 13.4%;
 `;
 
 export const DataContainer = styled.div`
 
     box-sizing: border-box;
+
     display: grid;
     grid-template-rows: 33fr 33fr 33fr;
     grid-template-columns: 50fr 50fr;
 
-    width: 45%;
+    width: 50%;
 
     #Data1{
         grid-row-start: 1;
@@ -132,30 +136,9 @@ export const DataContent = styled.div`
 export const ImagemContainer = styled.div`
 
     box-sizing: border-box;
-    width: 60%;
-    height: auto;
+    width: 50%;
 
-    display: grid;
-    grid-template-rows: 50fr 50fr;
-    grid-template-columns: 25fr 25fr 25fr 25fr;
-
-    padding-top: 13.4%;
-    
-   
-    #TelaApp1{
-        grid-row-start: 1;
-        grid-row-end: 3;
-        grid-column-start: 2;
-        grid-column-end: 4;
-        z-index: 1;
-    }
-    
-    #TelaApp2{
-        padding-left: 20px;
-        grid-row-start: 1;
-        grid-row-end: 3;
-        grid-column-start: 3;
-        grid-column-end: 4;
-        z-index: 2;
+    #Tela{
+        width: 100%;
     }
 `;
