@@ -1,5 +1,6 @@
-import { NewsSection } from './news';
+import { NewsSection} from './news';
+import { FooterSection } from './Footer';
 
 export {
-    NewsSection
+    NewsSection, FooterSection
 };
