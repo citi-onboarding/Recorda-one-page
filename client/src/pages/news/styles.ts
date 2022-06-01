@@ -23,6 +23,11 @@ export const SectionTitle = styled.h2`
 export const CardsContainer = styled.div`
     width: 100vw;
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-around;
+    align-items: stretch;
+    
+    @media screen and (max-width: 845px) {
+        gap: 25px;
+    }
 `;

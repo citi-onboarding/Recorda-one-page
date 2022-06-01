@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const NewsCardStyle = styled.div`
     width: 40%;
+    min-width: 400px;
     border-radius: 15px;
     padding: 50px 54px 48px 40px;
     display: flex;
@@ -27,7 +28,11 @@ export const NewsDescription = styled.p`
     font-size: 20px;
     line-height: 36px;
     text-align: justify;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
 `;
 
 export const NewsRedirect = styled.a`
