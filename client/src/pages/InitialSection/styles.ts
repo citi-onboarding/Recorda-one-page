@@ -1,9 +1,14 @@
 import styled from "styled-components";
 import { Backgroung } from "../../assets";
 
-export const InitialContainer = styled.div`
+export const InitialContainer = styled.section`
+    display: flex;
+    justify-content: center;
+`;
+export const InitialSection = styled.div`
 
     width: 100%;
+    max-width: 1440px;
 
     background-color: ${(props) => props.theme.colors.background};
     position: relative;
@@ -11,23 +16,27 @@ export const InitialContainer = styled.div`
     #OldPeopleImage{
         position: absolute;
         right: 2%;
-        bottom: 48%;
+        bottom: 17%;
         width: 50%;
     }
+    box-sizing: border-box;
 `;
 
+
 export const TopContainer = styled.div`
-    box-sizing: border-box;
+    
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
 
-    width: 100%;
+    //width: 100%;
 
     padding: 228px 6.64% 230px 6.64%;
     gap: 67px;
+    box-sizing: border-box;
+
     background-color: ${(props) => props.theme.colors.darkRed} !important;
     background: url(${Backgroung});
 `;
@@ -78,7 +87,7 @@ export const BottonContainer = styled.div`
     justify-content: center;
     align-items: center;
     background-color: #FFFEFC;
-    width: 100%;
+    //width: 100%;
 
     margin-bottom: 10%;
 `;
