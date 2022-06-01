@@ -13,17 +13,28 @@ export const NavbarContainer = styled.div`
         align-items: center;
         background-color: ${(props) => props.theme.colors.lightRed}
     }
+
     ul{
         display: flex;
         list-style: none;
         text-decoration: none;
         gap: 34px;
     }
+
     a{
         color: ${(props) => props.theme.colors.textLight};
         text-decoration: none;
     }
 `
+
+export const MaxWidth = styled.div`
+    max-width: 1440px;
+    width:100%;
+    display:flex;
+    flex: row;
+    justify-content: space-around;
+`
+
 export const SearchBox = styled.div`
     display: flex;
     height: 69px;
