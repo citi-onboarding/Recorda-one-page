@@ -13,7 +13,7 @@ export const FeedbackCardsDiv = styled.div`
     padding: 60px 35px;
     display: flex;
     flex-direction: column;
-    gap: 3.3vh;
+    gap: 25px;
 `;
 
 export const FeedbackTitle = styled.h2`
