@@ -44,7 +44,7 @@ export const UpperFeedbacks = styled.div`
     display: flex;
     flex-flow: row wrap-reverse;
     gap: 25px;
-    align-items: stretch;
+    align-items: center;
     justify-content: space-around;
 `;
 
@@ -52,10 +52,11 @@ export const LowerFeedbacks = styled.div`
     display: flex;
     flex-flow: row wrap;
     gap: 25px;
-    align-items: stretch;
+    align-items: center;
     justify-content: space-around;
 `;
 
 export const FeedbackCardImg = styled.img`
-    width: 402px;
+    width: 25vw;
+    min-width: 402px;
 `;
