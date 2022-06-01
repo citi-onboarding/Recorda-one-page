@@ -1,6 +1,5 @@
 import { NavbarContainer, SearchBox, FlexBox } from "./styles";
 import { LogoRecorda, SearchIcon } from "../../assets";
-import { linksNavbar } from "../../components"
 
 export const Navbar: React.ElementType = () => {
     return(
