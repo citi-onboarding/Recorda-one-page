@@ -5,11 +5,11 @@ import {
 } from "./styles";
 
 import { Dados } from "../../components";
-import { OldPeople, Celular1, Celular2 } from "../../assets";
+import { OldPeople, Celular1, Celular2, Oi } from "../../assets";
 
 export const Initial: React.ElementType = () => {
     return (
-        <>
+        
             <InitialContainer>
                 <TopContainer>
                     <FraseDeEfeito>frase de efeito</FraseDeEfeito>
@@ -21,7 +21,7 @@ export const Initial: React.ElementType = () => {
                         of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
                         software like Aldus PageMaker including versions of Lorem Ipsum.</Paragrafo>
                     <BotaoDownload>BAIXE AGORA!</BotaoDownload>
-                    <img src={OldPeople} alt="Foto de grupo de idosos" />
+                <img src={OldPeople} id="OldPeopleImage" alt="Ilustração de um grupo de idosos" />
                 </TopContainer>
                 <BottonContainer>
                     <DataContainer>
@@ -35,6 +35,6 @@ export const Initial: React.ElementType = () => {
                     </ImagemContainer>
                 </BottonContainer>
             </InitialContainer>
-        </>
+            
     );
 }
