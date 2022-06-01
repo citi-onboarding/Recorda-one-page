@@ -1,5 +1,7 @@
-import LogoCITi from './logo.png';
+import LogoRecorda from './logo.png';
+import SearchIcon from './SearchIcon.png';
 
 export {
-    LogoCITi
+    LogoRecorda,
+    SearchIcon,
 };

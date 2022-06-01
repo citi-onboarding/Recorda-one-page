@@ -21,7 +21,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     background: ${(props) => props.theme.colors.background};
-    color: ${(props) => props.theme.colors.text};
+    color: ${(props) => props.theme.colors.textDark};
     font: 400 16px Roboto, sans-serif;
     -webkit-font-smoothing: antialiased;
   }
