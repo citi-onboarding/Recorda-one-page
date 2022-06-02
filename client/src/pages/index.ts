@@ -1,10 +1,9 @@
+import { Navbar } from './navbar';
 import { NewsSection } from './news';
 import { FeedbackSection } from './feedback';
 
 export {
-    NewsSection
-};
-
-export {
+    Navbar,
+    NewsSection,
     FeedbackSection
 };
