@@ -14,10 +14,16 @@ export const GlobalStyle = createGlobalStyle`
       font-size: 87.5%;
     }
   }
+
   body {
     font-family:  'Barlow', sans-serif;
     -webkit-font-smoothing: antialiased;
+    background: ${(props) => props.theme.colors.background};
+    color: ${(props) => props.theme.colors.textDark};
+    font: 400 16px Roboto, sans-serif;
   }
+
+
   button {
     cursor: pointer;
   }
