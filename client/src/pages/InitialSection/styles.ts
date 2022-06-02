@@ -4,36 +4,28 @@ import { Backgroung } from "../../assets";
 export const InitialContainer = styled.section`
     display: flex;
     justify-content: center;
+
+   section{
+        width: 100%;
+        max-width: 1440px;
+        background-color: ${(props) => props.theme.colors.background};
+        box-sizing: border-box;
+   }
 `;
-export const InitialSection = styled.div`
-
-    width: 100%;
-    max-width: 1440px;
-
-    background-color: ${(props) => props.theme.colors.background};
-    
-    
-    box-sizing: border-box;
-`;
-
 
 export const TopContainer = styled.div`
     
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-
-    //width: 100%;
-
-    padding: 228px 6.64% 230px 6.64%;
-    gap: 67px;
+    padding: 228px 95.72px 230px 95.72px;
     box-sizing: border-box;
-
     background-color: ${(props) => props.theme.colors.darkRed} !important;
     background: url(${Backgroung});
     position: relative;
+    gap: 67px;
+    
     #OldPeopleImage{
         position: absolute;
         right: 0;
@@ -45,7 +37,6 @@ export const TopContainer = styled.div`
 
 export const FraseDeEfeito = styled.h3`
     width: 60%;
-
     font-family: 'Barlow';
     font-style: normal;
     font-weight: 800;
@@ -57,7 +48,6 @@ export const FraseDeEfeito = styled.h3`
 
 export const Paragrafo = styled.p`
     width: 80%;
-
     height: auto;
     font-family: 'Barlow';
     font-style: normal;
@@ -69,14 +59,12 @@ export const Paragrafo = styled.p`
     color: ${(props) => props.theme.colors.textLight}; 
 `;
 
-export const BotaoDownload = styled.button`
+export const ButtonDownload = styled.button`
     width: 234px;
     height: 69px;
-
     background: #F2F3F6;
     border-radius: 15px;
     border: none;
-
     font-family: 'Barlow';
     font-style: normal;
     font-weight: 400;
@@ -89,8 +77,6 @@ export const BottonContainer = styled.div`
     justify-content: center;
     align-items: center;
     background-color: #FFFEFC;
-    //width: 100%;
-
     padding-bottom: 10%;
     padding-top: 13.4%;
 `;
@@ -98,11 +84,9 @@ export const BottonContainer = styled.div`
 export const DataContainer = styled.div`
 
     box-sizing: border-box;
-
     display: grid;
     grid-template-rows: 33fr 33fr 33fr;
     grid-template-columns: 50fr 50fr;
-
     width: 50%;
 
     #Data1{
@@ -133,12 +117,12 @@ export const DataContent = styled.div`
     flex-direction: column;
 `;
 
-export const ImagemContainer = styled.div`
+export const ImageContainer = styled.div`
 
     box-sizing: border-box;
     width: 50%;
 
-    #Tela{
-        width: 100%;
+    #ScreenPhone{
+        width: 95%;
     }
 `;

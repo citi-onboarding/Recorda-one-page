@@ -1,16 +1,16 @@
 
 import {
-    InitialContainer, FraseDeEfeito, Paragrafo, BotaoDownload, TopContainer, BottonContainer,
-    DataContainer, ImagemContainer, DataContent, InitialSection
+    InitialContainer, FraseDeEfeito, Paragrafo, ButtonDownload, TopContainer, BottonContainer,
+    DataContainer, ImageContainer, DataContent
 } from "./styles";
 
 import { Dados } from "../../components";
-import { OldPeople, Celular1, Celular2, Celular} from "../../assets";
+import { OldPeopleImage, CellphoneImage} from "../../assets";
 
 export const Initial: React.ElementType = () => {
     return (
         <InitialContainer>
-            <InitialSection>
+            <section>
                 <TopContainer>
                     <FraseDeEfeito>Frase de efeito</FraseDeEfeito>
                     <Paragrafo>Is simply dummy text of the printing and typesetting industry.
@@ -20,8 +20,8 @@ export const Initial: React.ElementType = () => {
                         remaining essentially unchanged. It was popularised in the 1960s with the release
                         of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
                         software like Aldus PageMaker including versions of Lorem Ipsum.</Paragrafo>
-                    <BotaoDownload>BAIXE AGORA!</BotaoDownload>
-                <img src={OldPeople} id="OldPeopleImage" alt="Ilustração de Grupo de Pessoas Idosas" />
+                    <ButtonDownload>BAIXE AGORA!</ButtonDownload>
+                <img src={OldPeopleImage} id="OldPeopleImage" alt="Ilustração de Grupo de Pessoas Idosas" />
                 </TopContainer>
                 <BottonContainer>
                     <DataContainer>
@@ -29,12 +29,11 @@ export const Initial: React.ElementType = () => {
                         <DataContent id="Data2"><Dados numero={980} titulo={"MODEL SENTENCE"} /></DataContent>
                         <DataContent id="Data3"><Dados numero={253} titulo={"STANDARD CHUNK"} /></DataContent>
                     </DataContainer>
-                    <ImagemContainer>
-                        <img src={Celular} id="Tela" alt="" />
-                    </ImagemContainer>
+                    <ImageContainer>
+                        <img src={CellphoneImage} id="ScreenPhone" alt="Ilustração De Telas do Aplicatico" />
+                    </ImageContainer>
                 </BottonContainer>
-            </InitialSection>
-
+            </section>
         </InitialContainer>
     );
 }
