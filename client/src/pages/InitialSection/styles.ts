@@ -8,7 +8,7 @@ export const InitialContainer = styled.section`
     justify-self: center;
 
     width: 100%;
-    max-width: 1440px;
+    //max-width: 1440px;
     background-color: ${(props) => props.theme.colors.background};
     box-sizing: border-box;
 
@@ -36,6 +36,7 @@ export const TopContainer = styled.div`
         right: 0;
         bottom: -146px;
         width: 60%;
+        max-width: 930px;
         
     }
 `;
@@ -52,7 +53,7 @@ export const FraseDeEfeito = styled.h3`
 `;
 
 export const Paragrafo = styled.p`
-    width: 80%;
+    width: 60%;
     height: auto;
     font-family: 'Barlow';
     font-style: normal;
@@ -122,16 +123,6 @@ export const DataContent = styled.div`
     flex-direction: column;
 `;
 
-export const ImageContainer = styled.div`
-
-    box-sizing: border-box;
-    width: 50%;
-
-    #ScreenPhone{
-        width: 95%;
-    }
-`;
-
 export const Image = styled.img`
-    width: 50%;
+    width: 45%;
 `;
