@@ -7,7 +7,6 @@ import { NewsSection, FooterSection } from './pages';
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      
       <FooterSection/>
       <GlobalStyle/>
     </ThemeProvider>
