@@ -1,7 +1,7 @@
 
 import {
     InitialContainer, FraseDeEfeito, Paragrafo, ButtonDownload, TopContainer, BottonContainer,
-    DataContainer, ImageContainer, DataContent
+    DataContainer, ImageContainer, DataContent, Image
 } from "./styles";
 
 import { Dados } from "../../components";
@@ -10,7 +10,6 @@ import { OldPeopleImage, CellphoneImage} from "../../assets";
 export const Initial: React.ElementType = () => {
     return (
         <InitialContainer>
-            <section>
                 <TopContainer>
                     <FraseDeEfeito>Frase de efeito</FraseDeEfeito>
                     <Paragrafo>Is simply dummy text of the printing and typesetting industry.
@@ -21,7 +20,7 @@ export const Initial: React.ElementType = () => {
                         of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
                         software like Aldus PageMaker including versions of Lorem Ipsum.</Paragrafo>
                     <ButtonDownload>BAIXE AGORA!</ButtonDownload>
-                <img src={OldPeopleImage} id="OldPeopleImage" alt="Ilustração de Grupo de Pessoas Idosas" />
+                <Image src={OldPeopleImage} id="OldPeopleImage" alt="Ilustração de Grupo de Pessoas Idosas" />
                 </TopContainer>
                 <BottonContainer>
                     <DataContainer>
@@ -29,11 +28,8 @@ export const Initial: React.ElementType = () => {
                         <DataContent id="Data2"><Dados numero={980} titulo={"MODEL SENTENCE"} /></DataContent>
                         <DataContent id="Data3"><Dados numero={253} titulo={"STANDARD CHUNK"} /></DataContent>
                     </DataContainer>
-                    <ImageContainer>
-                        <img src={CellphoneImage} id="ScreenPhone" alt="Ilustração De Telas do Aplicatico" />
-                    </ImageContainer>
+                    <Image src={CellphoneImage} id="ScreenPhone" alt="Ilustração De Telas do Aplicatico" />
                 </BottonContainer>
-            </section>
         </InitialContainer>
     );
 }

@@ -4,13 +4,18 @@ import { Backgroung } from "../../assets";
 export const InitialContainer = styled.section`
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    justify-self: center;
 
-   section{
-        width: 100%;
-        max-width: 1440px;
-        background-color: ${(props) => props.theme.colors.background};
-        box-sizing: border-box;
-   }
+    width: 100%;
+    max-width: 1440px;
+    background-color: ${(props) => props.theme.colors.background};
+    box-sizing: border-box;
+
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+
 `;
 
 export const TopContainer = styled.div`
@@ -125,4 +130,8 @@ export const ImageContainer = styled.div`
     #ScreenPhone{
         width: 95%;
     }
+`;
+
+export const Image = styled.img`
+    width: 50%;
 `;
