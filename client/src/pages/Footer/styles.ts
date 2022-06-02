@@ -1,26 +1,18 @@
 import styled from "styled-components";
 
 export const Footer = styled.div`
+    
     display: flex;
     justify-content: center;
-   
+
     section{
         width: 100%;
         max-width: 1440px;
+        
         background-color: ${(props) => props.theme.colors.lightRed};
         padding: 101px 166px 32.92px 137px;
         box-sizing: border-box;
     }
-    
-`;
-
-export const Container = styled.div`
-    
-    box-sizing: border-box;
-    width: 100%;
-    max-width: 1440px;
-    
-    
 `;
 
 
@@ -33,9 +25,14 @@ export const TopContainer = styled.div`
 
     padding-bottom: 78px;
 
+    #FooterLogo{
+        width: 96px;
+        height: 96px;
+    }
+
 `;
 
-export const SocialMediaContainer = styled.div`
+export const MediaContainer = styled.div`
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -45,7 +42,7 @@ export const SocialMediaContainer = styled.div`
     
     gap: 17px;
 
-    p{
+    #TextFollowUs{
        
         width: 212px;
         height: 20px;
@@ -60,11 +57,9 @@ export const SocialMediaContainer = styled.div`
 
         color: #FFFFFF;
     }
-
-    //border: 2px solid white;
 `;
 
-export const MediaContainer = styled.div`
+export const SocialMediaContainer = styled.div`
     display: flex;
     justify-content: flex-end;
     align-items:center;
@@ -72,19 +67,6 @@ export const MediaContainer = styled.div`
     gap: 14px;
 `;
 
-export const MediaContent = styled.div`
-   
-    width: 46px;
-    height: 46px;
-
-    background: #C4C4C4;
-    border-radius: 23px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    
-`;
 
 export const BottonContainer = styled.div`
     display: flex;
@@ -95,7 +77,7 @@ export const BottonContainer = styled.div`
     gap: 27px;
 
     hr{
-        width: 1092px;
+        width: 100%;
         height: 0px;
 
         border: 1px solid #FFFFFF;
@@ -104,5 +86,24 @@ export const BottonContainer = styled.div`
     .FooterIcon{
         margin: 0 7px 0 7px;
     }
+
+    p{
+        
+        width: 248px;
+        height: 27px;
+        
+        font-family: 'Sora';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 23px;
+        text-align: center;
+
+        color: #FFFFFF;
+
+        #TextFooter{
+            font-size: 18px;
+        }
+    } 
 `;
 

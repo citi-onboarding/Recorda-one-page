@@ -1,8 +1,8 @@
 import Hearth from './hearth.svg';
-import LogoFooter from './logoCompleta.png'
-import HeartFooter from './heartFooter.png'
-import CitiFooter from './Citi.png'
+import Heart2 from './heart2.svg'
+import LogoFooter2 from './logo2.svg'
+import Citi2 from './Citi2.svg'
 
 export {
-    Hearth, LogoFooter, HeartFooter, CitiFooter
+    Hearth, LogoFooter2, Heart2, Citi2
 };
