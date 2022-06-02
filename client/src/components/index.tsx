@@ -1,5 +1,7 @@
+import { MediaContent } from "./SocialMediaContent";
 import { Dados } from "./Dados";
 
-export {
-    Dados
+export{
+    MediaContent,
+    Dados,
 };

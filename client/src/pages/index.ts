@@ -1,8 +1,10 @@
+import { NewsSection} from './news';
+import { FooterSection } from './Footer';
 import { Initial } from "./InitialSection";
 import { Navbar } from './navbar';
-import { NewsSection } from './news';
 
 export {
+    FooterSection,
     Initial,
     Navbar,
     NewsSection,
