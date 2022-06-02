@@ -27,7 +27,7 @@ export const NewsTitle = styled.h2`
 export const NewsTitleImage = styled.img`
     position: relative;
     top: 3px;
-
+    
     @media screen and (max-width: 540px) {
         display: none;
     }
@@ -37,5 +37,8 @@ export const CardsContainer = styled.div`
     width: 100vw;
     display: flex;
     flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-around;
+    align-items: stretch;
+    gap: 25px;
 `;
