@@ -8,7 +8,7 @@ export const FeedbackSection: React.ElementType = () => {
             <FeedbackTitle>O que as famílias estão falando sobre nós?<FeedbackTitleImage src={FeedbackTitleEmoji} alt="Emoji do título da seção de feedbacks" /></FeedbackTitle>
             <FeedbackCardsDiv>
                 <UpperFeedbacks>
-                    <Feedback userImage={"https://pbs.twimg.com/media/EeTpvT8WAAA3VBs.jpg"} userName={"João Pedro"} userText={"Fusce commodo lacus et neque luctus ornare."} />
+                    <Feedback userImage={"https://pbs.twimg.com/media/EeTpvT8WAAA3VBs.jpg"} userName={"João Pedro"} userText={"Fusce commodo lacus et neque luctus ornare. Fusce commodo lacus et neque luctus ornare. Fusce commodo lacus et neque luctus ornare. Fusce commodo lacus et neque luctus ornare. Fusce commodo lacus et neque luctus ornare. Fusce commodo lacus et neque luctus ornare. Fusce commodo lacus et neque luctus ornare. Fusce commodo lacus et neque luctus ornare. Fusce commodo lacus et neque luctus ornare. Fusce commodo lacus et neque luctus ornare."} />
                     <Feedback userImage={"https://pbs.twimg.com/media/EV6EI-wWkAA52pe?format=jpg&name=900x900"} userName={"João Pedro"} userText={"Fusce commodo lacus et neque luctus ornare."} />
                     <FeedbackCardImg src={SeniorsImage} alt="Imagem dos idosos" />
                 </UpperFeedbacks>

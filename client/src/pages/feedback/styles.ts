@@ -35,7 +35,7 @@ export const FeedbackTitleImage = styled.img`
     left: -20px;
     top: -20px;
 
-    @media screen and (max-width: 950px) {
+    @media screen and (max-width: 1000px) {
         display: none;
     }
 `;
