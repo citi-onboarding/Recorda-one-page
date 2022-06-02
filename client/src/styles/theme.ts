@@ -7,4 +7,3 @@ export const theme = {
     textDark: '#000000'
   }
 };
-
