@@ -4,18 +4,19 @@ export const Footer = styled.div`
     
     display: flex;
     justify-content: center;
+    background-color: ${(props) => props.theme.colors.lightRed};
+`;
+
+export const Container = styled.div`
+    
+    width: 100%;
+    max-width: 1440px;
 
     section{
-        width: 100%;
-        max-width: 1440px;
-        
-        background-color: ${(props) => props.theme.colors.lightRed};
         padding: 101px 166px 32.92px 137px;
         box-sizing: border-box;
     }
 `;
-
-
 
 export const TopContainer = styled.div`
     display: flex;
