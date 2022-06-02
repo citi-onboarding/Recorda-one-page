@@ -7,12 +7,18 @@ import OldPeopleImage from './old-people-group.png';
 import CellphoneImage from './Celular.png';
 import LogoRecorda from './logo.png';
 import SearchIcon from './SearchIcon.png';
+import Heart2 from './heart2.svg'
+import LogoFooter from './logo.svg'
+import Citi2 from './Citi.svg'
 
 export {
     HearthImage,
     SeniorsImage,
     FeedbackTitleEmoji,
     FeedbackBackground,
+    LogoFooter,
+    Heart2,
+    Citi2,
     Backgroung,
     OldPeopleImage,
     CellphoneImage,
