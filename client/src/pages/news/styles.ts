@@ -10,9 +10,13 @@ export const NewsContainer = styled.div`
     gap: 80px;
 `;
 
-export const SectionTitle = styled.h2`
+export const NewsTitle = styled.h2`
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
     width: 100vw;
-    font-style: normal;
     font-weight: 400;
     font-size: 48px;
     line-height: 58px;
@@ -20,14 +24,18 @@ export const SectionTitle = styled.h2`
     color: ${(props) => props.theme.colors.textDark};
 `;
 
+export const NewsTitleImage = styled.img`
+    position: relative;
+    top: 3px;
+
+    @media screen and (max-width: 540px) {
+        display: none;
+    }
+`;
+
 export const CardsContainer = styled.div`
     width: 100vw;
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
     justify-content: space-around;
-    align-items: stretch;
-    
-    @media screen and (max-width: 845px) {
-        gap: 25px;
-    }
 `;
