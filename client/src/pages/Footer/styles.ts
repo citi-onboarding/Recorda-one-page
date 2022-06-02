@@ -10,12 +10,8 @@ export const Footer = styled.div`
 export const Container = styled.div`
     
     width: 100%;
-    max-width: 1440px;
-
-    section{
-        padding: 101px 166px 32.92px 137px;
-        box-sizing: border-box;
-    }
+    padding: 101px 95.72px 32.92px 95.72px;
+    box-sizing: border-box;
 `;
 
 export const TopContainer = styled.div`
@@ -107,4 +103,8 @@ export const BottonContainer = styled.div`
         }
     } 
 `;
+
+export const Image = styled.img`
+`;
+
 

@@ -1,5 +1,5 @@
 import { Citi2, Heart2, LogoFooter } from "../../assets";
-import { Footer, SocialMediaContainer, TopContainer, MediaContainer, BottonContainer, Container } from "./styles";
+import { Footer, SocialMediaContainer, TopContainer, MediaContainer, BottonContainer, Container, Image } from "./styles";
 import { MediaContent } from "../../components";
 
 
@@ -7,9 +7,8 @@ export const FooterSection: React.ElementType = () => {
   return (
     <Footer>
       <Container>
-      <section>
           <TopContainer>
-            <img src={LogoFooter} alt="Logo da Recorda One" id="FooterLogo" />
+            <Image src={LogoFooter} alt="Logo da Recorda One" id="FooterLogo" />
             <MediaContainer>
               <p id="TextFollowUs">Nos siga nas redes sociais</p>
               <SocialMediaContainer>
@@ -21,11 +20,9 @@ export const FooterSection: React.ElementType = () => {
           </TopContainer>
           <BottonContainer>
             <hr />
-            <p> Made with &lt;/&gt;  and <img src={Heart2} alt="Heart Icon" className="FooterIcon" /> by <img src={Citi2} alt="Citi Icon" id="TextFooter" className="FooterIcon" /> </p>
+            <p> Made with &lt;/&gt;  and <Image src={Heart2} alt="Heart Icon" className="FooterIcon" /> by <Image src={Citi2} alt="Citi Icon" id="TextFooter" className="FooterIcon" /> </p>
           </BottonContainer>
-        </section>
-      </Container>
-        
+      </Container>   
     </Footer>
   );
 }
