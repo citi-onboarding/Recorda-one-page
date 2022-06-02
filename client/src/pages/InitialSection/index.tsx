@@ -1,7 +1,7 @@
 
 import {
     InitialContainer, FraseDeEfeito, Paragrafo, ButtonDownload, TopContainer, BottonContainer,
-    DataContainer, ImageContainer, DataContent, Image
+    DataContainer, DataContent, Image
 } from "./styles";
 
 import { Dados } from "../../components";
