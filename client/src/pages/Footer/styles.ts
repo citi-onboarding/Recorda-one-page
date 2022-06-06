@@ -4,7 +4,7 @@ export const Footer = styled.div`
     
     display: flex;
     justify-content: center;
-    background-color: ${(props) => props.theme.colors.lightRed};
+    background-color: ${(props) => props.theme.colors.darkRed};
 `;
 
 export const Container = styled.div`
@@ -18,7 +18,6 @@ export const TopContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    //gap: 758px;
 
     padding-bottom: 78px;
 
@@ -45,8 +44,7 @@ export const MediaContainer = styled.div`
         height: 20px;
         
         text-align: end;
-
-        font-family: 'Sora';
+        font-family: Barlow;
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
@@ -88,8 +86,7 @@ export const BottonContainer = styled.div`
         
         width: 248px;
         height: 27px;
-        
-        font-family: 'Sora';
+        font-family: Barlow;
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
@@ -102,6 +99,13 @@ export const BottonContainer = styled.div`
             font-size: 18px;
         }
     } 
+`;
+
+export const ImageLogo = styled.img`
+   padding: 7px 7.42px 12.38px 7px;
+    background: linear-gradient(224.88deg, rgba(171, 47, 22, 0.92) 13.86%, rgba(171, 47, 22, 0.85) 92.33%);
+    border-radius: 10px;
+    align-items: center;
 `;
 
 export const Image = styled.img`
