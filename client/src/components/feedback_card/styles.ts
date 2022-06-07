@@ -5,27 +5,12 @@ export const FeedbackCardStyle = styled.div`
     flex-flow: column nowrap;
     width: 25vw;
     min-width: 402px;
-    height: 275px;
+    height: 250px;
     background: ${(props) => props.theme.colors.background};
     border: 1px solid ${(props) => props.theme.colors.background};
     box-shadow: 8px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 15px;
-    padding: 20px 32px 20px 20px;
-`;
-
-export const FeedbackCardUser = styled.div`
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 25px;
-    margin-bottom: 20px;
-`;
-
-export const FeedbackUserImg = styled.img`
-    width: 47px;
-    height: 49px;
-    border-radius: 50px;
+    padding: 30px 32px 20px 20px;
 `;
 
 export const FeedbackUserName = styled.h3`
@@ -35,6 +20,7 @@ export const FeedbackUserName = styled.h3`
     font-size: 24px;
     line-height: 29px;
     color: ${(props) => props.theme.colors.textDark};
+    margin-bottom: 10px;
 `;
 
 export const FeedbackText = styled.p`
