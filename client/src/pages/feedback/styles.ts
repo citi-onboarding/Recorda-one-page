@@ -10,6 +10,8 @@ export const FeedbackContainer = styled.div`
 
 export const FeedbackCardsDiv = styled.div`
     background-image: url(${FeedbackBackground}), linear-gradient(101.51deg, #872410 102.82%, #AB2F16 102.83%, #AE432D 153.57%, #872410 202.24%);
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 60px 35px;
     display: flex;
     flex-direction: column;
