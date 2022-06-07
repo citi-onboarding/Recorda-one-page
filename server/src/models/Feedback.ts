@@ -7,9 +7,9 @@ export class Feedback {
     id: number
 
     @Column()
-    PersonName: string
+    personName: string
 
     @Column()
-    FeedbackText: string
+    feedbackText: string
 
 }
