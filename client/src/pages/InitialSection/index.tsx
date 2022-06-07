@@ -1,17 +1,20 @@
 
 import {
-    InitialContainer, FraseDeEfeito, Paragrafo, ButtonDownload, TopContainer, BottonContainer,
+    InitialContainer, FraseDeEfeito, Paragrafo, TopContainer, BottonContainer,
     DataContainer, DataContent, Image
 } from "./styles";
 
-import { Dados } from "../../components";
+import {
+    Dados,
+    DownloadButton,
+} from "../../components";
 import { OldPeopleImage, CellphoneImage} from "../../assets";
 
 export const Initial: React.ElementType = () => {
     return (
         <InitialContainer>
                 <TopContainer>
-                    <FraseDeEfeito>Frase de efeito</FraseDeEfeito>
+                    <FraseDeEfeito>Recordar é amar</FraseDeEfeito>
                     <Paragrafo>Is simply dummy text of the printing and typesetting industry.
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                         when an unknown printer took a galley of type and scrambled it to make a type
@@ -19,7 +22,7 @@ export const Initial: React.ElementType = () => {
                         remaining essentially unchanged. It was popularised in the 1960s with the release
                         of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
                         software like Aldus PageMaker including versions of Lorem Ipsum.</Paragrafo>
-                    <ButtonDownload>BAIXE AGORA!</ButtonDownload>
+                        <DownloadButton></DownloadButton>
                 <Image src={OldPeopleImage} id="OldPeopleImage" alt="Ilustração de Grupo de Pessoas Idosas" />
                 </TopContainer>
                 <BottonContainer>

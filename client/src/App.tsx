@@ -6,6 +6,7 @@ import { Navbar } from './pages';
 import { NewsSection } from './pages';
 import { FeedbackSection } from './pages';
 import {FooterSection} from './pages';
+import { ContactUs } from './pages';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Initial></Initial>
       <NewsSection/>
       <FeedbackSection/>
+      <ContactUs/>
       <FooterSection/>
       <GlobalStyle/>
     </ThemeProvider>
