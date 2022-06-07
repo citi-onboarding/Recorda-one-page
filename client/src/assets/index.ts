@@ -10,7 +10,8 @@ import SearchIcon from './SearchIcon.png';
 import HeartFooter from './heartFooter.svg'
 import LogoFooter from './FooterLogo.svg'
 import Citi from './Citi.svg'
-import DownloadImage from './DownloadImage.svg';
+import DownloadVector from './DownloadImage.svg';
+import AppleImage from './apple.svg';
 
 export {
     HearthImage,
@@ -25,5 +26,6 @@ export {
     CellphoneImage,
     LogoRecorda,
     SearchIcon,
-    DownloadImage,
+    DownloadVector,
+    AppleImage,
 };
