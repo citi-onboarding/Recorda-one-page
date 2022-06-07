@@ -12,8 +12,7 @@ import {
   MediaContainer,
   BottonContainer,
   Container,
-  Image,
-  ImageLogo 
+  Image, 
 } from "./styles";
 
 import {
@@ -26,7 +25,7 @@ export const FooterSection: React.ElementType = () => {
     <Footer>
       <Container>
           <TopContainer>
-            <ImageLogo src={LogoFooter} alt="Logo da Recorda One" id="FooterLogo" />
+            <Image src={LogoFooter} alt="Logo da Recorda One" id="FooterLogo" />
             <MediaContainer>
               <p id="TextFollowUs">Nos siga nas redes sociais</p>
               <SocialMediaContainer>

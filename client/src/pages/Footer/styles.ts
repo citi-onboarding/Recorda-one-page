@@ -101,13 +101,6 @@ export const BottonContainer = styled.div`
     } 
 `;
 
-export const ImageLogo = styled.img`
-    //padding: 7px 7.42px 12.38px 7px;
-    background: linear-gradient(224.88deg, rgba(171, 47, 22, 0.92) 13.86%, rgba(171, 47, 22, 0.85) 92.33%);
-    border-radius: 10px;
-    align-items: center;
-`;
-
 export const Image = styled.img`
 `;
 
