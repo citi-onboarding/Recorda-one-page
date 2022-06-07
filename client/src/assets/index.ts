@@ -4,12 +4,14 @@ import FeedbackTitleEmoji from './feedback_title_emoji.png'
 import FeedbackBackground from './feedback_background.png'
 import Backgroung from './background.svg';
 import OldPeopleImage from './old-people-group.png';
-import CellphoneImage from './Celular.png';
+import CellphoneImage from './Celular.svg';
 import LogoRecorda from './logo.png';
 import SearchIcon from './SearchIcon.png';
-import Heart2 from './heart2.svg'
-import LogoFooter from './logo.svg'
-import Citi2 from './Citi.svg'
+import HeartFooter from './heartFooter.svg'
+import LogoFooter from './FooterLogo.svg'
+import Citi from './Citi.svg'
+import DownloadVector from './DownloadImage.svg';
+import AppleImage from './apple.svg';
 
 export {
     HearthImage,
@@ -17,11 +19,13 @@ export {
     FeedbackTitleEmoji,
     FeedbackBackground,
     LogoFooter,
-    Heart2,
-    Citi2,
+    HeartFooter,
+    Citi,
     Backgroung,
     OldPeopleImage,
     CellphoneImage,
     LogoRecorda,
     SearchIcon,
+    DownloadVector,
+    AppleImage,
 };
