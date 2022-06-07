@@ -16,7 +16,8 @@ import {
 
 import {
     OldPeopleImage,
-    CellphoneImage
+    CellphoneImage,
+    DownloadImage,
 } from "../../assets";
 
 export const Initial: React.ElementType = () => {
@@ -28,7 +29,7 @@ export const Initial: React.ElementType = () => {
                     Demonstre todo seu amor pelos idosos na sua vida com o<br/> aplicativo Recorda.
                     Ajude-os a administrar seus remédios e<br/> histórico médico de maneira simples e organizada.
                 </Paragrafo>
-                <ButtonDownload></ButtonDownload>
+                <ButtonDownload><Image src={DownloadImage}></Image></ButtonDownload>
                 <Image src={OldPeopleImage} id="OldPeopleImage" alt="Ilustração de Grupo de Pessoas Idosas" />
             </TopContainer>
             <BottonContainer>
