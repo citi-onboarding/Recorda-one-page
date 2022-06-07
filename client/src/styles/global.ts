@@ -18,7 +18,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family:  'Barlow', sans-serif;
+    font-family: 'Barlow', sans-serif;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
     background: ${(props) => props.theme.colors.background};
