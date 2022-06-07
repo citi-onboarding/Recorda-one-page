@@ -17,4 +17,5 @@ export class FirstSection {
 
     @Column()
     linkAppImage: string
+    
 }

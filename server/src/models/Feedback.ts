@@ -7,9 +7,6 @@ export class Feedback {
     id: number
 
     @Column()
-    ProfilePictureLink: string
-
-    @Column()
     PersonName: string
 
     @Column()
