@@ -5,12 +5,12 @@ import { Citi, Crud } from '../global'
 export default class FeedbackController implements Crud{
     
     async create(request: Request, response: Response){
-        const {ProfilePictureLink, PersonName, FeedbackText } = request.body;
+        const { personName, feedbackText } = request.body;
         
-        const isAnyUndefined = Citi.areValuesUndefined(ProfilePictureLink, PersonName, FeedbackText);
+        const isAnyUndefined = Citi.areValuesUndefined(personName, feedbackText);
         if(isAnyUndefined) return response.status(400).send();
 
-        const newFeedback = {ProfilePictureLink, PersonName, FeedbackText};
+        const newFeedback = {personName, feedbackText};
         const {httpStatus, message} = await Citi.insertIntoDatabase(Feedback, newFeedback);
 
         return response.status(httpStatus).send({message});
@@ -33,12 +33,12 @@ export default class FeedbackController implements Crud{
 
     async update(request: Request, response: Response){
         const { id } = request.params;
-        const {ProfilePictureLink, PersonName, FeedbackText} = request.body;
+        const {personName, feedbackText} = request.body;
 
-        const isAnyUndefined = await Citi.areValuesUndefined(ProfilePictureLink, PersonName, FeedbackText, id);
+        const isAnyUndefined = await Citi.areValuesUndefined(personName, feedbackText, id);
         if(isAnyUndefined) return response.status(400).send();
 
-        const feedbackWithUpdates = {ProfilePictureLink, PersonName, FeedbackText};
+        const feedbackWithUpdates = {personName, feedbackText};
 
         const {httpStatus, messageFromUpdate} = await Citi.updateValue(Feedback, id, feedbackWithUpdates);
         return response.status(httpStatus).send({messageFromUpdate});
