@@ -7,13 +7,22 @@ export class FirstSection {
     id: number
 
     @Column()
-    info1: string
+    info1Title: string
 
     @Column()
-    info2: string
+    info1Subtitle: string
 
     @Column()
-    info3: string
+    info2Title: string
+
+    @Column()
+    info2Subtitle: string
+
+    @Column()
+    info3Title: string
+
+    @Column()
+    info3Subtitle: string
 
     @Column()
     linkAppImage: string
