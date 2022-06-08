@@ -1,18 +1,14 @@
-import { FeedbackCardStyle, FeedbackCardUser, FeedbackUserImg, FeedbackUserName, FeedbackText } from "./styles";
+import { FeedbackCardStyle, FeedbackUserName, FeedbackText } from "./styles";
 
-type FeedbackProps = {
-    userImage: string, 
+type FeedbackProps = { 
     userName: string,
     userText: string
 };
 
-export const Feedback: React.ElementType = ({ userImage, userName, userText }: FeedbackProps) => {
+export const Feedback: React.ElementType = ({ userName, userText }: FeedbackProps) => {
     return (
         <FeedbackCardStyle>
-            <FeedbackCardUser>
-                <FeedbackUserImg src={userImage} alt="Foto do usuário que postou o feedback" />
-                <FeedbackUserName>{userName}</FeedbackUserName>
-            </FeedbackCardUser>
+            <FeedbackUserName>{userName}</FeedbackUserName>
             <FeedbackText>{userText}</FeedbackText>
         </FeedbackCardStyle>
     );

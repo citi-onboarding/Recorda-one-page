@@ -20,7 +20,11 @@ import {
     DownloadVector,
 } from "../../assets";
 
+import api from "../../services/api";
+
 export const Initial: React.ElementType = () => {
+
+
     return (
         <InitialContainer>
             <TopContainer>
