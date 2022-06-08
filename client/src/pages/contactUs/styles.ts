@@ -4,11 +4,13 @@ import { Backgroung } from "../../assets";
 
 export const ContactUsContainer = styled.div`
     width: 100vw;
+    max-width: 1920px;
     padding: 95px 130px 130px 90px;
     display: flex;
     flex-flow: row wrap;
     gap: 13vw;
     justify-content: center;
+    margin: 0 auto 0 auto;
 `;
 
 export const DownloadContainer = styled.div` 

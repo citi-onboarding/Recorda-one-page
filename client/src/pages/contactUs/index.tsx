@@ -48,8 +48,6 @@ export const ContactUs: React.ElementType = () => {
                     <ButtonDownload>baixe agora</ButtonDownload>
                 </DownloadContent>
             </DownloadContainer>
-
-
             <FormContainer>
                 <FormTitle>Entre em contato conosco</FormTitle>
                 <Forms onSubmit={getContact}>
