@@ -1,3 +1,6 @@
+import { useState } from "react";
+import api from "../../services/api";
+
 import{
     DownloadContainer,
     EffectPhrase,
@@ -21,6 +24,22 @@ import{
  } from "./styles";
 
 export const ContactUs: React.ElementType = () => {
+
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+
+    const getContact = async (e: { preventDefault: () => void }) => {
+        try {
+            e.preventDefault();
+            await api.post('email', {name, email, message});
+            alert('Mensagem enviada com sucesso');
+        } catch (error) {
+            console.log(error);
+            alert('Ocorreu um erro, tente novamente.')
+        }
+    }
+
     return(
         <ContactUsContainer>
             <DownloadContainer>
@@ -33,13 +52,16 @@ export const ContactUs: React.ElementType = () => {
 
             <FormContainer>
                 <FormTitle>Entre em contato conosco</FormTitle>
-                <Forms>
+                <Forms onSubmit={getContact}>
                     <NameLabelContainer>
                         <NameLabel htmlFor="username">Nome</NameLabel>
                         <NameInput 
                         type="text"
                         id="username"
-                        name="username" 
+                        name="username"
+                        required
+                        value={name}
+                        onChange={(e) => { setName(e.target.value) }}
                         />
                     </NameLabelContainer>
                     <EmailLabelContainer>
@@ -48,6 +70,9 @@ export const ContactUs: React.ElementType = () => {
                         type="text"
                         id="email"
                         name="email" 
+                        required
+                        value={email}
+                        onChange={(e) => { setEmail(e.target.value) }}
                         />
                     </EmailLabelContainer>
                     <MessageLabelContainer>
@@ -55,6 +80,9 @@ export const ContactUs: React.ElementType = () => {
                         <MessageInput
                         id="message"
                         name="message"
+                        required
+                        value={message}
+                        onChange={(e) => { setMessage(e.target.value) }}
                         />
                     </MessageLabelContainer>
                     <FormButtonContainer>

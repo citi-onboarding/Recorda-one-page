@@ -10,9 +10,12 @@ const SendMail =async (request: Request, response: Response) => {
 
         await MailServer({
             destinationUser: process.env.EMAIL_WILL_RECEIVE,
-            subjectText: 'nodemailer funcionando',
-            htmlOption: `<p>
-                Um usuário entrou em contato. Esse usuário tem o nome ${name}, apresenta o email ${email} e enviou a seguinte mensagem: ${message}.
+            subjectText: 'Um usuário entrou em contato',
+            htmlOption: 
+            `<p>
+                <b>Nome do usuário:</b> ${name} <br>
+                <b>E-mail do usuário:</b> ${email} <br>
+                <b>Mensagem enviada:</b> ${message}
             </p>`
         })
 
