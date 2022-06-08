@@ -44,6 +44,20 @@ export const EffectPhrase = styled.p`
     color: ${(props) => props.theme.colors.textLight};
 `;
 
+export const ButtonDownload = styled.button`
+    width: 225px;
+    height: 69px;
+    background-color: ${(props)=> props.theme.colors.textLight};
+    border-radius: 15px;
+    border: none;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+`;
+
 export const FormContainer = styled.div` 
     display: flex;
     flex-flow: column nowrap;

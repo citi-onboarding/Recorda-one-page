@@ -6,6 +6,7 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
+  
   html {
     @media (max-width: 1080px) {
       font-size: 93.75%;
@@ -21,11 +22,7 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Barlow', sans-serif;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
-    background: ${(props) => props.theme.colors.background};
-    color: ${(props) => props.theme.colors.textDark};
-    font: 400 16px Barlow, sans-serif;
   }
-
 
   button {
     cursor: pointer;

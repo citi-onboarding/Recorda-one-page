@@ -3,6 +3,7 @@ import{
     EffectPhrase,
     DownloadContent,
     ContactUsContainer,
+    ButtonDownload,
     FormContainer,
     FormTitle,
     Forms,
@@ -19,17 +20,13 @@ import{
     FormButton,
  } from "./styles";
 
- import{
-    DownloadButton
-} from "../../components";
-
 export const ContactUs: React.ElementType = () => {
     return(
         <ContactUsContainer>
             <DownloadContainer>
                 <DownloadContent>
                     <EffectPhrase>Recordar é amar</EffectPhrase>
-                    <DownloadButton value="baixe agora"></DownloadButton>
+                    <ButtonDownload>baixe agora</ButtonDownload>
                 </DownloadContent>
             </DownloadContainer>
 
