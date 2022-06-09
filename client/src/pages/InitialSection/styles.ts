@@ -6,15 +6,11 @@ export const InitialContainer = styled.section`
     justify-content: center;
     flex-direction: column;
     justify-self: center;
-
     width: 100%;
+    max-width: 1920px;
     background-color: ${(props) => props.theme.colors.background};
     box-sizing: border-box;
-
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-
+    margin: 0 auto;
 `;
 
 export const TopContainer = styled.div`
@@ -27,7 +23,6 @@ export const TopContainer = styled.div`
     box-sizing: border-box;
     background-color: ${(props) => props.theme.colors.darkRed} !important;
     background: url(${Backgroung});
-    position: relative;
     gap: 67px;
     
     #OldPeopleImage{
@@ -81,7 +76,6 @@ export const ButtonDownload = styled.button`
 `;
 
 export const BottonContainer = styled.div`
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,13 +85,12 @@ export const BottonContainer = styled.div`
 `;
 
 export const DataContainer = styled.div`
-
     box-sizing: border-box;
     display: grid;
     grid-template-rows: 33fr 33fr 33fr;
     grid-template-columns: 50fr 50fr;
     width: 50%;
-
+    
     #Data1{
         grid-row-start: 1;
         grid-row-end: 2;
@@ -119,7 +112,6 @@ export const DataContainer = styled.div`
 `;
 
 export const DataContent = styled.div`
-
     display: flex;
     align-items: center;
     justify-content: center;
