@@ -29,9 +29,9 @@ export const FooterSection: React.ElementType = () => {
             <MediaContainer>
               <p id="TextFollowUs">Nos siga nas redes sociais</p>
               <SocialMediaContainer>
-                <MediaContent image={HeartFooter} imageName={"Heart Icon"}></MediaContent>
-                <MediaContent image={HeartFooter} imageName={"Heart Icon"}></MediaContent>
-                <MediaContent image={HeartFooter} imageName={"Heart Icon"}></MediaContent>
+                <MediaContent socialMediaLink={"#"} image={HeartFooter} imageName={"Instagram icon"}></MediaContent>
+                <MediaContent socialMediaLink={"#"} image={HeartFooter} imageName={"LinkedIn icon"}></MediaContent>
+                <MediaContent socialMediaLink={"#"} image={HeartFooter} imageName={"Github Icon"}></MediaContent>
               </SocialMediaContainer>
             </MediaContainer>
           </TopContainer>

@@ -1,12 +1,13 @@
 import { MediaStyle } from './styles'
 
 type SocialProps = {
-    image: string;
-    imageName: string;
+    image: string,
+    imageName: string,
+    socialMediaLink: string,
 };
 
-export const MediaContent: React.ElementType = ({image, imageName}: SocialProps) => {
+export const MediaContent: React.ElementType = ({image, imageName, socialMediaLink}: SocialProps) => {
     return(
-        <MediaStyle><img src={image} alt={imageName} /></MediaStyle>
+        <MediaStyle><a href={socialMediaLink} target="_blank"><img src={image} alt={imageName} /></a></MediaStyle>
     );
 }
