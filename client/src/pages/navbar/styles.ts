@@ -3,6 +3,10 @@ import styled from "styled-components";
 
 export const NavbarContainer = styled.div`
     font-size: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
 
     nav{
         width: 100vw;

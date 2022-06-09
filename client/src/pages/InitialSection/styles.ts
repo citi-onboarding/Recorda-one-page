@@ -11,11 +11,7 @@ export const InitialContainer = styled.section`
     max-width: 1920px;
     background-color: ${(props) => props.theme.colors.background};
     box-sizing: border-box;
-
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-
+    margin: 0 auto;
 `;
 
 export const TopContainer = styled.div`
@@ -28,7 +24,6 @@ export const TopContainer = styled.div`
     box-sizing: border-box;
     background-color: ${(props) => props.theme.colors.darkRed} !important;
     background: url(${Backgroung});
-    position: relative;
     gap: 67px;
     
     #OldPeopleImage{
