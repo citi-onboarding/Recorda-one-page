@@ -4,6 +4,7 @@ import FooterController from '@controllers/FooterController';
 import FeedbackController from '@controllers/FeedbackController';
 import FirstSectionController from '@controllers/FirstSectionController';
 import NewsController from '@controllers/NewsController';
+import { SendMail } from '@controllers/MailController';
 
 const routes = express.Router();
 
@@ -37,5 +38,7 @@ routes.post('/news', newsController.create);
 routes.get('/news', newsController.get);
 routes.delete('/news/:id', newsController.delete);
 routes.put('/news/:id', newsController.update);
+
+routes.post('/email', SendMail);
 
 export default routes;
