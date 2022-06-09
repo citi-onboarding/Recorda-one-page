@@ -41,7 +41,7 @@ export const ContactUs: React.ElementType = () => {
     }
 
     return(
-        <ContactUsContainer>
+        <ContactUsContainer id="contact">
             <DownloadContainer>
                 <DownloadContent>
                     <EffectPhrase>Recordar é amar</EffectPhrase>
