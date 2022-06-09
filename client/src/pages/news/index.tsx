@@ -1,14 +1,32 @@
 import { News } from "../../components/NewsCard/NewsCard";
 import { NewsContainer, NewsTitle, CardsContainer, NewsTitleImage } from "./styles";
 import { HearthImage } from "../../assets";
+import api from "../../services/api";
+import { useState, useEffect } from "react";
+
+type NewsData = {
+    title: string,
+    description: string,
+    newsLink: string,
+}
 
 export const NewsSection: React.ElementType = () => {
+    const [news, setNews] = useState<NewsData[]>([])
+    async function getNews() {
+        const response = await api.get('news')
+        setNews(response.data)
+    }
+    useEffect(() => {
+        getNews()
+    }, [])
     return (
         <NewsContainer>
             <NewsTitle><NewsTitleImage src={HearthImage} alt="Emoji de coração" /> Entendendo melhor <NewsTitleImage src={HearthImage} alt="Emoji de coração" /></NewsTitle>
             <CardsContainer>
-                <News newsName={"News1"} newsText={"À medida que a demência progride, cada pessoa encontrará sua própria maneira de lidar, reagir e se adaptar às mudanças que ela traz. Desenvolver essas estratégias de enfrentamento pode ser um processo gradual e subconsciente."} newsLink={""}/>
-                <News newsName={"News2"} newsText={"Esta ficha informativa fornece algumas estratégias práticas para lidar com os problemas de comportamento preocupantes e as dificuldades de comunicação frequentemente encontradas ao cuidar de uma pessoa com demência."} newsLink={""}/>
+                { news.map((news) =>[
+                        < News newsTitle={news.title} newsDescription={news.description} newsLink={news.newsLink}/>
+                ])
+                }
             </CardsContainer>
         </NewsContainer>
     );

@@ -1,16 +1,16 @@
 import { NewsCardStyle, NewsDescription, NewsReadMore, NewsRedirect, NewsTitle } from "./styles"; 
 
 type NewsProps = {
-    newsName: string, 
-    newsText: string,
+    newsTitle: string, 
+    newsDescription: string,
     newsLink: string
 };
 
-export const News: React.ElementType = ({ newsName, newsText, newsLink }: NewsProps) => {
+export const News: React.ElementType = ({ newsTitle, newsDescription, newsLink }: NewsProps) => {
     return (
         <NewsCardStyle>
-            <NewsTitle>{newsName}</NewsTitle>
-            <NewsDescription>{newsText}</NewsDescription>
+            <NewsTitle>{newsTitle}</NewsTitle>
+            <NewsDescription>{newsDescription}</NewsDescription>
             <NewsRedirect href={newsLink}><NewsReadMore>Ler mais</NewsReadMore>&gt;</NewsRedirect>
         </NewsCardStyle>
     );
