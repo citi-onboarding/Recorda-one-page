@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const CarouselCardStyle = styled.div`
     display: flex;
     flex-flow: column nowrap;
-    width: 40vw;
+    width: 95%;
     min-width: 402px;
     height: 275px;
     background: ${(props) => props.theme.colors.background};
@@ -13,7 +13,7 @@ export const CarouselCardStyle = styled.div`
     padding: 20px 32px 20px 20px;
 
     @media only screen and (max-width: 1200px){
-        width: 35vw;
+        width: 30vw;
     }
 `;
 

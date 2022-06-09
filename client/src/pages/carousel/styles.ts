@@ -5,6 +5,8 @@ import "slick-carousel/slick/slick-theme.css";
 export const BackgroundCarousel = styled.div`
     background-color: ${(props) => props.theme.colors.lightRed};
     color: ${(props) => props.theme.colors.textLight};
+    max-width:1920px;
+    margin: 0 auto;
 `
 export const Container = styled.div`
     width: 100%;
