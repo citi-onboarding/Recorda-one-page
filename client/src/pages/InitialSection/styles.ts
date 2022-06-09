@@ -8,6 +8,7 @@ export const InitialContainer = styled.section`
     justify-self: center;
 
     width: 100%;
+    max-width: 1920px;
     background-color: ${(props) => props.theme.colors.background};
     box-sizing: border-box;
 

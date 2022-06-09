@@ -10,16 +10,16 @@ export const Navbar: React.ElementType = () => {
                     <FlexBox>
                         <ul>
                             <li>
-                                <a href="#">Link1</a>
+                                <a href="#initial_section">Sobre o App</a>
                             </li>
                             <li>
-                                <a href="#">Link2</a>
+                                <a href="#carousel">Inspirações</a>
                             </li>
                             <li>
-                                <a href="#">Link3</a>
+                                <a href="#feedback">Avaliações</a>
                             </li>
                             <li>
-                                <a href="#">Link4</a>
+                                <a href="#contact">Contato</a>
                             </li>
                         </ul>
 

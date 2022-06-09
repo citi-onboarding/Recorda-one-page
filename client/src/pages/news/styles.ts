@@ -1,13 +1,15 @@
 import styled from "styled-components";
 
-export const NewsContainer = styled.div`
+export const NewsContainer = styled.section`
     width: 100vw;
+    max-width: 1920px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 50px;
     gap: 80px;
+    margin: 0 auto 0 auto;
 `;
 
 export const NewsTitle = styled.h2`
@@ -16,7 +18,7 @@ export const NewsTitle = styled.h2`
     justify-content: center;
     align-items: center;
     gap: 25px;
-    width: 100vw;
+    width: 100%;
     font-weight: 400;
     font-size: 48px;
     line-height: 58px;
@@ -34,7 +36,7 @@ export const NewsTitleImage = styled.img`
 `;
 
 export const CardsContainer = styled.div`
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-flow: row wrap;
