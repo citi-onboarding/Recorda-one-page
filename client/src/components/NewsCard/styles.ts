@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 export const NewsCardStyle = styled.div`
-    width: 40%;
+    width: 40vw;
     min-width: 400px;
+    max-width: 800px;
     border-radius: 15px;
     padding: 50px 54px 48px 40px;
     display: flex;
