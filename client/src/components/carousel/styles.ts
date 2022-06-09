@@ -4,7 +4,6 @@ export const CarouselCardStyle = styled.div`
     display: flex;
     flex-flow: column nowrap;
     width: 95%;
-    min-width: 402px;
     height: 275px;
     background: ${(props) => props.theme.colors.background};
     border: 1px solid ${(props) => props.theme.colors.background};
@@ -13,6 +12,12 @@ export const CarouselCardStyle = styled.div`
     padding: 20px 32px 20px 20px;
 
     @media only screen and (max-width: 1200px){
+        width: 60vw;
+    }
+    @media only screen and (max-width: 800px){
+        width: 50vw;
+    }
+    @media only screen and (max-width: 600px){
         width: 30vw;
     }
 `;

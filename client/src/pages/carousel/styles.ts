@@ -15,18 +15,27 @@ export const Container = styled.div`
     flex: wrap;
     padding: 124px 95.7px 124px 95.7px;
     gap: 20px;
+    display:flex;
+    flex-flow: row wrap;
+    @media only screen and (max-width: 1250px){
+        justify-content:center;
+    }
 `
 
 export const BoxSlider = styled.div`
     width: 60%;
     justify-content: center;
-    min-width:400px;
+    @media only screen and (max-width: 1250px){
+        width: 100%
+    }
 `
 
 export const BoxText = styled.div`
     width:30%;
     justify-content: center;
     font-size: 18px;
-    min-width: 400px;
+    @media only screen and (max-width: 1250px){
+        width: 100%
+    }
 `
 
