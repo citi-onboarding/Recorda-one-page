@@ -40,12 +40,10 @@ export const Initial: React.ElementType = () => {
 
     async function getData() {
         try {
-            const response = await api.get(`firstsection`)
-            console.log(response.data);
+            const response = await api.get(`firstsection`);
             setData(response.data);
         } catch (error) {
-            console.log('CANT')
-            alert("cant connect")
+            console.log('Error connecting to database');
         }
     }
     useEffect(() => {
