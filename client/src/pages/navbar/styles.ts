@@ -3,11 +3,15 @@ import styled from "styled-components";
 
 export const NavbarContainer = styled.div`
     font-size: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
 
     nav{
-        width: 100%;
+        width: 100vw;
         height: 118px;
-
+        padding: 0 85px 0 85px;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -20,7 +24,7 @@ export const NavbarContainer = styled.div`
         text-decoration: none;
         gap: 34px;
     }
-
+    
     a{
         color: ${(props) => props.theme.colors.textLight};
         text-decoration: none;
@@ -28,11 +32,10 @@ export const NavbarContainer = styled.div`
 `
 
 export const MaxWidth = styled.div`
-    max-width: 1440px;
     width:100%;
     display:flex;
-    flex: row;
-    justify-content: space-around;
+    flex-flow: row nowrap;
+    justify-content: space-between;
 `
 
 export const SearchBox = styled.div`

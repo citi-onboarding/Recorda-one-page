@@ -5,12 +5,12 @@ import { Citi, Crud } from '../global'
 export default class CarouselController implements Crud {
     
     async create(request: Request, response: Response){
-        const {title, description, imageLink} = request.body;
+        const {ProfilePictureLink, PersonName, CardText} = request.body;
 
-        const isAnyUndefined = Citi.areValuesUndefined(title, description, imageLink);
+        const isAnyUndefined = Citi.areValuesUndefined(ProfilePictureLink, PersonName, CardText);
         if(isAnyUndefined) return response.status(400).send();
 
-        const newCarousel = { title, description, imageLink };
+        const newCarousel = { ProfilePictureLink, PersonName, CardText };
         const {httpStatus, message} = await Citi.insertIntoDatabase(Carousel, newCarousel);
 
         return response.status(httpStatus).send({ message });
@@ -33,12 +33,12 @@ export default class CarouselController implements Crud {
 
     async update(request: Request, response: Response){
         const { id } = request.params;
-        const { title, description, imageLink } = request.body;
+        const { ProfilePictureLink, PersonName, CardText } = request.body;
 
-        const isAnyUndefined = Citi.areValuesUndefined(title, description, imageLink, id);
+        const isAnyUndefined = Citi.areValuesUndefined(ProfilePictureLink, PersonName, CardText, id);
         if(isAnyUndefined) return response.status(400).send();
 
-        const carouselWithUpdatedValues = { title, description, imageLink };
+        const carouselWithUpdatedValues = { ProfilePictureLink, PersonName, CardText };
 
         const { httpStatus, messageFromUpdate } = await Citi.updateValue(Carousel, id, carouselWithUpdatedValues);
         return response.status(httpStatus).send({messageFromUpdate});
