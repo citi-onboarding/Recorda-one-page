@@ -1,7 +1,7 @@
 import { News } from "../../components/NewsCard/NewsCard";
 import { NewsContainer, NewsTitle, CardsContainer, NewsTitleImage } from "./styles";
 import { HearthImage } from "../../assets";
-import axios from "axios";
+import api from "../../services/api";
 import { useState, useEffect } from "react";
 
 type NewsData = {
@@ -13,7 +13,7 @@ type NewsData = {
 export const NewsSection: React.ElementType = () => {
     const [news, setNews] = useState<NewsData[]>([])
     async function getNews() {
-        const response = await axios.get('http://localhost:3001/news')
+        const response = await api.get('news')
         setNews(response.data)
     }
     useEffect(() => {
