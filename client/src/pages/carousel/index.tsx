@@ -31,7 +31,7 @@ export const Carousel: React.ElementType = () => {
   }, [])
 
   return (
-    <BackgroundCarousel>
+    <BackgroundCarousel id="carousel">
       <Container>
           <BoxText>
             <h1>Inspirações</h1>
