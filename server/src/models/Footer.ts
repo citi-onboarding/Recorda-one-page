@@ -7,9 +7,6 @@ export class Footer {
     id: number
 
     @Column()
-    logo: string
-
-    @Column()
     socialMedia1: string
 
     @Column()
@@ -17,8 +14,5 @@ export class Footer {
 
     @Column()
     socialMedia3: string
-
-    @Column()
-    phone: string
 
 }

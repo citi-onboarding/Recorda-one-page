@@ -7,12 +7,9 @@ export class Feedback {
     id: number
 
     @Column()
-    ProfilePictureLink: string
+    personName: string
 
     @Column()
-    PersonName: string
-
-    @Column()
-    FeedbackText: string
+    feedbackText: string
 
 }
