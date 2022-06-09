@@ -1,15 +1,19 @@
 import styled from "styled-components";
 import { FeedbackBackground } from "../../assets";
 
-export const FeedbackContainer = styled.div`
-    width: 100 vw;
+export const FeedbackContainer = styled.section`
+    width: 100vw;
+    max-width: 1920px;
     padding-top: 133px;
     display: flex;
     flex-direction: column;
+    margin: 0 auto 0 auto;
 `;
 
 export const FeedbackCardsDiv = styled.div`
     background-image: url(${FeedbackBackground}), linear-gradient(101.51deg, #872410 102.82%, #AB2F16 102.83%, #AE432D 153.57%, #872410 202.24%);
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 60px 35px;
     display: flex;
     flex-direction: column;
@@ -21,7 +25,7 @@ export const FeedbackTitle = styled.h2`
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     font-weight: 400;
     font-size: 48px;
     line-height: 58px;
@@ -34,7 +38,7 @@ export const FeedbackTitleImage = styled.img`
     position: relative;
     left: -20px;
     top: -20px;
-
+    
     @media screen and (max-width: 1000px) {
         display: none;
     }

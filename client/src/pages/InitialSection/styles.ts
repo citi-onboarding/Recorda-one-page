@@ -8,6 +8,7 @@ export const InitialContainer = styled.section`
     justify-self: center;
 
     width: 100%;
+    max-width: 1920px;
     background-color: ${(props) => props.theme.colors.background};
     box-sizing: border-box;
 
@@ -27,6 +28,8 @@ export const TopContainer = styled.div`
     box-sizing: border-box;
     background-color: ${(props) => props.theme.colors.darkRed} !important;
     background: url(${Backgroung});
+    background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
     gap: 67px;
     
