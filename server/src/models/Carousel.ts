@@ -7,12 +7,12 @@ export class Carousel {
     id: number
 
     @Column()
-    title: string
-    
-    @Column()
-    description: string
+    ProfilePictureLink: string
 
     @Column()
-    imageLink: string
+    PersonName: string
+
+    @Column()
+    CardText: string
 
 }

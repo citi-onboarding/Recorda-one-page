@@ -6,13 +6,15 @@ import { Navbar } from './pages';
 import { NewsSection } from './pages';
 import { FeedbackSection } from './pages';
 import {FooterSection} from './pages';
+import {Carousel} from './pages';
 
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <Navbar/>
-      <Initial></Initial>
+      <Initial/>
+      <Carousel/>
       <NewsSection/>
       <FeedbackSection/>
       <FooterSection/>
