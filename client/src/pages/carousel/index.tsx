@@ -1,5 +1,5 @@
-import axios from "axios";
-import React, { Component, useState, useEffect } from "react";
+import api from "../../services/api";
+import React, { useState, useEffect } from "react";
 import { Container, BackgroundCarousel, BoxText, BoxSlider } from "./styles";
 import Slider from 'react-slick';
 import { CarouselCard } from "../../components/carousel/CarouselCard";
@@ -23,8 +23,8 @@ export const Carousel: React.ElementType = () => {
 
   const [card, setCard] = useState<CardsData[]>([])
   async function getCards(){
-    const response  = await axios.get('http://localhost:3001/carousel')
-    setCard(response.data)
+    const response  = await api.get('carousel');
+    setCard(response.data);
   }
   useEffect(()=>{
     getCards();
