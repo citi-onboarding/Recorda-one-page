@@ -25,6 +25,7 @@ import {
 
 type InitialData = {
     id: number,
+    linkAppImage: string,
     info1Title: string,
     info1Subtitle: string,
     info2Title: string,
@@ -68,15 +69,17 @@ export const Initial: React.ElementType = () => {
                 {
                     data.map(
                         (data) => [
-                            <DataContainer key={data.id}>
-                                <DataContent id="Data1"><Dados numero={data.info1Title} titulo={data.info1Subtitle} /></DataContent>
-                                <DataContent id="Data2"><Dados numero={data.info2Title} titulo={data.info2Subtitle} /></DataContent>
-                                <DataContent id="Data3"><Dados numero={data.info3Title} titulo={data.info3Subtitle} /></DataContent>
-                            </DataContainer>
+                            <>
+                                <DataContainer key={data.id}>
+                                    <DataContent id="Data1"><Dados numero={data.info1Title} titulo={data.info1Subtitle} /></DataContent>
+                                    <DataContent id="Data2"><Dados numero={data.info2Title} titulo={data.info2Subtitle} /></DataContent>
+                                    <DataContent id="Data3"><Dados numero={data.info3Title} titulo={data.info3Subtitle} /></DataContent>
+                                </DataContainer>
+                                <Image src={data.linkAppImage} id="ScreenPhone" alt="Ilustração De Telas do Aplicatico" />
+                            </>
                         ]
                     )
                 }
-                <Image src={CellphoneImage} id="ScreenPhone" alt="Ilustração De Telas do Aplicatico" />
             </BottonContainer>
         </InitialContainer>
     );
