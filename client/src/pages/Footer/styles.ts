@@ -10,7 +10,7 @@ export const Footer = styled.div`
 export const Container = styled.div`
     
     width: 100%;
-    padding: 101px 95.72px 32.92px 95.72px;
+    padding: 40.92px 95.72px 15.92px 95.72px;
     box-sizing: border-box;
 `;
 
@@ -19,7 +19,7 @@ export const TopContainer = styled.div`
     align-items: center;
     justify-content: space-between;
 
-    padding-bottom: 78px;
+    padding-bottom: 40px;
 
     #FooterLogo{
         width: 96px;

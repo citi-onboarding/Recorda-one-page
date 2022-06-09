@@ -12,6 +12,9 @@ import LogoFooter from './FooterLogo.svg'
 import Citi from './Citi.svg'
 import DownloadVector from './DownloadImage.svg';
 import AppleImage from './apple.svg';
+import GithubIcon from './githubIcon.png';
+import InstagramIcon from './instagramIcon.png';
+import LinkedinIcon from './linkedinIcon.png';
 
 export {
     HearthImage,
@@ -21,11 +24,14 @@ export {
     LogoFooter,
     HeartFooter,
     Citi,
-    Backgroung,
+    Backgroung, 
     OldPeopleImage,
     CellphoneImage,
     LogoRecorda,
     SearchIcon,
     DownloadVector,
     AppleImage,
+    GithubIcon,
+    InstagramIcon,
+    LinkedinIcon,
 };
