@@ -3,7 +3,10 @@ import { useState, useEffect } from "react";
 
 import {
   Citi,
+  GithubIcon,
   HeartFooter,
+  InstagramIcon,
+  LinkedinIcon,
   LogoFooter
 } from "../../assets";
 
@@ -57,9 +60,9 @@ export const FooterSection: React.ElementType = () => {
               links.map(
                 (link) => [
                   <SocialMediaContainer>
-                    <MediaContent socialMediaLink={link.socialMedia1} image={HeartFooter} imageName={"Instagram icon"}></MediaContent>
-                    <MediaContent socialMediaLink={link.socialMedia2} image={HeartFooter} imageName={"LinkedIn icon"}></MediaContent>
-                    <MediaContent socialMediaLink={link.socialMedia3} image={HeartFooter} imageName={"Github Icon"}></MediaContent>
+                    <MediaContent socialMediaLink={link.socialMedia1} image={InstagramIcon} imageName={"Instagram icon"}></MediaContent>
+                    <MediaContent socialMediaLink={link.socialMedia2} image={LinkedinIcon} imageName={"LinkedIn icon"}></MediaContent>
+                    <MediaContent socialMediaLink={link.socialMedia3} image={GithubIcon} imageName={"Github Icon"}></MediaContent>
                   </SocialMediaContainer>
                 ]
               )

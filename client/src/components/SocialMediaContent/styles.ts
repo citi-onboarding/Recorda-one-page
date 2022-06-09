@@ -10,4 +10,10 @@ export const MediaStyle = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    img{
+        width: 70%;
+        display: block;
+ margin: 0px auto;
+    }
 `;
