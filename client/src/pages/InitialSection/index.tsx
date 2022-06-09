@@ -26,7 +26,7 @@ export const Initial: React.ElementType = () => {
 
 
     return (
-        <InitialContainer>
+        <InitialContainer id="initial_section">
             <TopContainer>
                 <FraseDeEfeito>Recordar é amar</FraseDeEfeito>
                 <Paragrafo>

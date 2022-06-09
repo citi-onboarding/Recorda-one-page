@@ -4,7 +4,7 @@ import { FeedbackContainer, FeedbackTitle, UpperFeedbacks, LowerFeedbacks, Feedb
 
 export const FeedbackSection: React.ElementType = () => {
     return (
-        <FeedbackContainer>
+        <FeedbackContainer id="feedback">
             <FeedbackTitle>O que as famílias estão falando sobre nós?<FeedbackTitleImage src={FeedbackTitleEmoji} alt="Emoji do título da seção de feedbacks" /></FeedbackTitle>
             <FeedbackCardsDiv>
                 <UpperFeedbacks>
