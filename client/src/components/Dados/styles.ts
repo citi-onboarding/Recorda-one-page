@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const Numero = styled.h1`
    
-    width: 191px;
+   
     height: 114px;
 
     font-family: 'Barlow';
@@ -11,20 +11,19 @@ export const Numero = styled.h1`
     font-weight: 900;
     font-size: 96px;
     text-align: center;
-
     color: #000000;
 `;
 
 export const Titulo = styled.p`
     
-    width: 50%;
-    height: 66px;
+    height: 66px; 
+
     font-family: 'Barlow';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 28px;
-    /* or 117% */
+    word-wrap: break-word;
 
     text-align: center;
 
