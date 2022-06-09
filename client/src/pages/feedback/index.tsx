@@ -26,14 +26,15 @@ export const FeedbackSection: React.ElementType = () => {
             <FeedbackTitle>O que as famílias estão falando sobre nós?<FeedbackTitleImage src={FeedbackTitleEmoji} alt="Emoji do título da seção de feedbacks" /></FeedbackTitle>
             <FeedbackCardsDiv>
                 <UpperFeedbacks>
-                    <Feedback userName={feedback[0].personName} userText={feedback[0].feedbackText} />
-                    <Feedback userName={feedback[1].personName} userText={feedback[1].feedbackText} />
+                    { feedback.slice(0, 2).map((feedback) => [
+                        <Feedback userName={feedback.personName} userText={feedback.feedbackText} />
+                    ])}
                     <FeedbackCardImg src={SeniorsImage} alt="Imagem dos idosos" />
                 </UpperFeedbacks>
                 <LowerFeedbacks>
-                    <Feedback userName={feedback[2].personName} userText={feedback[2].feedbackText} />
-                    <Feedback userName={feedback[3].personName} userText={feedback[3].feedbackText} />
-                    <Feedback userName={feedback[4].personName} userText={feedback[4].feedbackText} />
+                    { feedback.slice(2, 5).map((feedback) => [
+                        <Feedback userName={feedback.personName} userText={feedback.feedbackText} />
+                    ])}
                 </LowerFeedbacks>
             </FeedbackCardsDiv>
         </FeedbackContainer>
