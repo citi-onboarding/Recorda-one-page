@@ -5,12 +5,12 @@ import { Citi, Crud } from '../global';
 export default class FooterController implements Crud {
 
     async create(request: Request, response: Response){
-        const {logo, socialMedia1, socialMedia2, socialMedia3, phone} = request.body;
+        const {socialMedia1, socialMedia2, socialMedia3} = request.body;
 
-        const isAnyUndefined = Citi.areValuesUndefined(logo, socialMedia1, socialMedia2, socialMedia3, phone);
+        const isAnyUndefined = Citi.areValuesUndefined(socialMedia1, socialMedia2, socialMedia3);
         if(isAnyUndefined) return response.status(400).send();
 
-        const newFooter = { logo, socialMedia1, socialMedia2, socialMedia3, phone };
+        const newFooter = {socialMedia1, socialMedia2, socialMedia3};
         const {httpStatus, message} = await Citi.insertIntoDatabase(Footer, newFooter);
 
         return response.status(httpStatus).send({ message });
@@ -33,12 +33,12 @@ export default class FooterController implements Crud {
 
     async update(request: Request, response: Response){
         const { id } = request.params;
-        const {logo, socialMedia1, socialMedia2, socialMedia3, phone} = request.body;
+        const {socialMedia1, socialMedia2, socialMedia3} = request.body;
 
-        const isAnyUndefined = Citi.areValuesUndefined(logo, socialMedia1, socialMedia2, socialMedia3, phone, id);
+        const isAnyUndefined = Citi.areValuesUndefined(socialMedia1, socialMedia2, socialMedia3, id);
         if(isAnyUndefined) return response.status(400).send();
 
-        const footerWithUpdatedValues = { logo, socialMedia1, socialMedia2, socialMedia3, phone };
+        const footerWithUpdatedValues = {socialMedia1, socialMedia2, socialMedia3};
 
         const { httpStatus, messageFromUpdate } = await Citi.updateValue(Footer, id, footerWithUpdatedValues);
         return response.status(httpStatus).send({ messageFromUpdate });
