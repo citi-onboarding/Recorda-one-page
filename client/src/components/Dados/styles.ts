@@ -16,8 +16,8 @@ export const Numero = styled.h1`
 
 export const Titulo = styled.p`
     
-    height: 66px;
-    
+    height: 66px; 
+
     font-family: 'Barlow';
     font-style: normal;
     font-weight: 400;
