@@ -14,7 +14,7 @@ export const GlobalStyle = createGlobalStyle`
     @media (max-width:720px) {
       font-size: 87.5%;
     }
-
+    scroll-behavior: smooth;
     overflow-x: hidden;
   }
 
