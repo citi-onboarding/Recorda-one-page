@@ -1,8 +1,9 @@
 import api from "../../services/api";
 import React, { useState, useEffect } from "react";
-import { Container, BackgroundCarousel, BoxText, BoxSlider } from "./styles";
+import { Container, BackgroundCarousel, BoxText, BoxSlider, Image } from "./styles";
 import Slider from 'react-slick';
 import { CarouselCard } from "../../components/carousel/CarouselCard";
+import { BolinhasImage } from "../../assets";
 
 type CardsData = {
   ProfilePictureLink: string, 
@@ -44,6 +45,7 @@ export const Carousel: React.ElementType = () => {
               ])}
             </Slider>
           </BoxSlider>
+      <Image src={BolinhasImage} alt="Ilustração de pequenas bolinhas" id="ImagemDeBolinhas"/>
       </Container>
     </BackgroundCarousel>
   );

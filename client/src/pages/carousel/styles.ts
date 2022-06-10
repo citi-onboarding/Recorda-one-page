@@ -7,6 +7,7 @@ export const BackgroundCarousel = styled.div`
     color: ${(props) => props.theme.colors.textLight};
     max-width:1920px;
     margin: 0 auto;
+    
 `
 export const Container = styled.div`
     width: 100%;
@@ -19,6 +20,16 @@ export const Container = styled.div`
     flex-flow: row wrap;
     @media only screen and (max-width: 1250px){
         justify-content:center;
+    }
+    position: relative;
+    z-index: 2;
+
+    #ImagemDeBolinhas{
+        position: absolute;
+        left: 0;
+        bottom: -30px;
+        z-index: 1;
+        color:  ${(props) => props.theme.colors.lightRed};
     }
 `
 
@@ -37,5 +48,8 @@ export const BoxText = styled.div`
     @media only screen and (max-width: 1250px){
         width: 100%
     }
+`
+
+export const Image = styled.img`
 `
 
