@@ -45,6 +45,10 @@ export const BoxText = styled.div`
     width:30%;
     justify-content: center;
     font-size: 18px;
+    p{
+        margin-top: 20px;
+        text-align: justify;
+    }
     @media only screen and (max-width: 1250px){
         width: 100%
     }
