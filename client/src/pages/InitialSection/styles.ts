@@ -39,6 +39,10 @@ export const TopContainer = styled.div`
         bottom: -146px;
         width: 60%;
         max-width: 930px;
+
+        @media(max-width: 1024px){
+            display: none;
+        }
         
     }
 `;
@@ -91,6 +95,19 @@ export const BottonContainer = styled.div`
     background-color: #FFFEFC;
     padding-bottom: 10%;
     padding-top: 13.4%;
+
+    @media(max-width: 1024px){
+        flex-direction: column;
+    }
+
+    #ScreenPhone{
+        @media(max-width: 1024px){
+            width: 60%;
+            margin: auto;
+            display: block;
+            padding-top: 60px;
+        }
+    }
 `;
 
 export const DataContainer = styled.div`
@@ -118,6 +135,9 @@ export const DataContainer = styled.div`
         grid-row-end: 4;
         grid-column-start: 1;
         grid-column-end: 2;
+    }
+    @media(max-width: 1024px){
+        width: 100%;
     }
 `;
 

@@ -15,6 +15,7 @@ import AppleImage from './apple.svg';
 import GithubIcon from './githubIcon.png';
 import InstagramIcon from './instagramIcon.png';
 import LinkedinIcon from './linkedinIcon.png';
+import BolinhasImage from  './bolinhas.svg';
 
 export {
     HearthImage,
@@ -34,4 +35,5 @@ export {
     GithubIcon,
     InstagramIcon,
     LinkedinIcon,
+    BolinhasImage,
 };
